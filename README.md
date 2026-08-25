@@ -19,7 +19,12 @@ Developed as part of the course *Raster Data Processing and Image Enhancement Te
 
 ## 🛠️ Technologies Used
 
-### Frontend
+<table>
+<tr>
+<td valign="top">
+
+**Frontend**
+
 | Technology | Purpose |
 |---|---|
 | HTML | Page structure |
@@ -28,7 +33,11 @@ Developed as part of the course *Raster Data Processing and Image Enhancement Te
 | Leaflet.js | Web mapping library |
 | GeoJSON | Vector data format |
 
-### Backend
+</td>
+<td valign="top">
+
+**Backend**
+
 | Technology | Purpose |
 |---|---|
 | PHP | Server-side scripting |
@@ -36,12 +45,20 @@ Developed as part of the course *Raster Data Processing and Image Enhancement Te
 | PostgreSQL + PostGIS | Spatial database |
 | pgAdmin | Database visual interface |
 
-### GIS Tools
+</td>
+<td valign="top">
+
+**GIS Tools**
+
 | Tool | Purpose |
 |---|---|
 | QGIS | Raster tiling for water bodies layer |
 | OpenStreetMap | Default basemap |
 | Stamen Terrain | Alternative basemap |
+
+</td>
+</tr>
+</table>
 
 ---
 
