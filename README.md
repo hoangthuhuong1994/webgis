@@ -96,18 +96,25 @@ Table name: `damproject`
 ### Map Overview
 ![Map Overview](screenshots/map_overview.png)
 
-### User Input Popup
-![User Input](screenshots/user_input_popup.png)
+### User Input Popup & Information provided by User
 
-### Information provided by User
-![User Input](screenshots/user_input.png)
+<table>
+<tr>
+<td><img src="screenshots/user_input_popup.png" alt="User Input Popup" width="500"/></td>
+<td><img src="screenshots/user_input.png" alt="Information provided by User" width="500"/></td>
+</tr>
+<tr>
+<td align="center">User Input Popup</td>
+<td align="center">Information provided by User</td>
+</tr>
+</table>
 
 ### Database Overview & Detailed View
 
 <table>
 <tr>
-<td><img src="screenshots/database.png" alt="Database Overview"/></td>
-<td><img src="screenshots/details_database.png" alt="Detailed Database View"/></td>
+<td><img src="screenshots/database.png" alt="Database Overview" width="500"/></td>
+<td><img src="screenshots/details_database.png" alt="Detailed Database View" width="500"/></td>
 </tr>
 <tr>
 <td align="center">Database Overview</td>
