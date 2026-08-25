@@ -102,11 +102,18 @@ Table name: `damproject`
 ### Information provided by User
 ![User Input](screenshots/user_input.png)
 
-### Database Overview 
-![Database](screenshots/database.png)
+### Database Overview & Detailed View
 
-### A detailed view of the database
-![Database](screenshots/details_database.png)
+<table>
+<tr>
+<td><img src="screenshots/database.png" alt="Database Overview"/></td>
+<td><img src="screenshots/details_database.png" alt="Detailed Database View"/></td>
+</tr>
+<tr>
+<td align="center">Database Overview</td>
+<td align="center">Detailed View</td>
+</tr>
+</table>
 
 ---
 
