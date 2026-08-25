@@ -97,16 +97,16 @@ Table name: `damproject`
 ![Map Overview](screenshots/map_overview.png)
 
 ### User Input Popup
-![Map Overview](screenshots/user_input_popup.png)
+![User Input](screenshots/user_input_popup.png)
 
 ### Information provided by User
-![Map Overview](screenshots/user_input.png)
+![User Input](screenshots/user_input.png)
 
 ### Database Overview 
-![Map Overview](screenshots/database.png)
+![Database](screenshots/database.png)
 
 ### A detailed view of the database
-![Map Overview](screenshots/details_database.png)
+![Database](screenshots/details_database.png)
 
 ---
 
