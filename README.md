@@ -106,6 +106,9 @@ git clone https://github.com/your-username/mekong-river-dams.git
 ### User Input Popup
 ![User Input](screenshots/user_input_popup.png)
 
+### Information provided by User
+![User Input](screenshots/user_input.png)
+
 ---
 
 ## 👩‍💻 Authors
