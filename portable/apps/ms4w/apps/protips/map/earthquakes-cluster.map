@@ -1,0 +1,98 @@
+MAP
+NAME "earthquakes-cluster"
+STATUS ON
+SIZE 1000 800
+SYMBOLSET "../etc/symbols.txt"
+EXTENT -180 -90 180 90
+UNITS DD
+SHAPEPATH "../data"
+IMAGECOLOR 255 255 255
+FONTSET "../etc/fonts.txt"
+
+WEB
+  IMAGEPATH "/ms4w/tmp/ms_tmp/" 
+  IMAGEURL "/ms_tmp/"
+END
+
+PROJECTION
+  "init=epsg:4326"
+END
+
+#
+# Start of layer definitions
+#
+
+LAYER
+  NAME 'global-raster'
+  TYPE RASTER
+  DATA "./GLOBALeb3colshade.jpg"
+  STATUS DEFAULT
+  CLASS
+    NAME 'Earth Image' 
+  END
+  PROJECTION
+    "init=epsg:4326"
+  END  
+END
+
+LAYER
+  NAME "earthquakes-cluster"
+  TYPE POINT
+  STATUS DEFAULT
+  EXTENT -179.987600 -61.325200 179.976100 74.552100
+  CONNECTIONTYPE OGR
+  CONNECTION "earthquakes.db"
+  DATA "grid.earthquakes"
+  CLASSITEM "Cluster:FeatureCount"
+  LABELITEM "Cluster:FeatureCount"
+  PROJECTION
+    "init=epsg:4326"
+  END
+  ###########################
+  # Define the cluster object
+  ###########################
+  CLUSTER
+    MAXDISTANCE 50
+    REGION "ellipse"
+  END  
+  #Return all shapes when querying
+  PROCESSING "CLUSTER_GET_ALL_SHAPES"
+  CLASS
+    NAME "Earthquakes-cluster"
+    EXPRESSION ("[Cluster:FeatureCount]" != "1")
+    #EXPRESSION ("[Cluster:FeatureCount]" > "50")
+    STYLE
+      SYMBOL "circle"
+      SIZE 50
+      COLOR 255 140 0
+      OUTLINECOLOR 0 0 0
+    END
+    LABEL
+      FONT sans
+      TYPE TRUETYPE
+      SIZE 8
+      COLOR 120 120 120
+      ALIGN CENTER
+      PRIORITY 10
+      BUFFER 1
+      PARTIALS TRUE
+      POSITION cc
+    END     
+  END 
+  CLASS
+    NAME "Earthquakes-single"
+    EXPRESSION "1"
+    STYLE
+      SYMBOL "circle"
+      SIZE 18
+      COLOR 255 140 0
+      OUTLINECOLOR 0 0 0
+    END    
+  END  
+  UNITS PIXELS
+  TOLERANCE 10  
+END # layer
+
+
+
+END # Map File

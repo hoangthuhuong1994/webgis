@@ -1,0 +1,149 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+
+  <meta name="GENERATOR"
+ content="Mozilla/4.72 [en] (X11; U; Linux 2.2.14-5.0 i686) [Netscape]">
+  <title></title>
+</head>
+  <body>
+
+<h1> <font face="Helvetica, Arial, sans-serif"><b><font size="+4">OGR/PHP
+Extension</font></b></font></h1>
+<font face="Helvetica, Arial, sans-serif"> &nbsp; </font>
+<h2> <font face="Helvetica, Arial, sans-serif">Introduction</font></h2>
+ <font face="Helvetica, Arial, sans-serif">The <a
+ href="http://www.gdal.org/ogr/">OGR library </a>is a C++ open source
+library (and command-line tools) providing read (and sometimes write) access
+to a variety of vector <a
+ href="http://www.gdal.org/ogr/ogr_formats.html">file formats</a>&nbsp;
+including ESRI Shapefiles, S-57, SDTS, PostGIS, Oracle Spatial, and Mapinfo
+mid/mif and TAB formats.</font>
+<p><font face="Helvetica, Arial, sans-serif">The C API is generally easy
+to call from other languages which allow call out to DLLs functions, such
+as Visual Basic, or Delphi.</font> </p>
+<p><font face="Helvetica, Arial, sans-serif">The OGR/PHP extension enables
+PHP users to access the functionalities included in the OGR library.&nbsp;
+This extension can be used as built-in PHP or as dynamic library (".dll"
+on Windows or ".so" on Unix).</font> </p>
+<p><font face="Helvetica, Arial, sans-serif">This extension was developed
+and is currently being maintained by <a
+ href="http://www.dmsolutions.ca/">DM Solutions Group</a>.  Special thanks
+go to Lars V. Nielsen and <a href="http://www.hvm.dk/">Hvenegaard &amp; Meklenborg</a>
+for funding the initial development of this extension and allowing it to
+remain open source.  <br>
+&nbsp; </font></p>
+
+<h4> <font face="Helvetica, Arial, sans-serif"><u>Installation</u></font></h4>
+
+<p><font face="Helvetica, Arial, sans-serif">The php_ogr.dll is located in /ms4w/Apache/php/extensions.</font></p>
+
+<h4> <font face="Helvetica, Arial, sans-serif"><u>Testing</u></font></h4>
+ <font face="Helvetica, Arial, sans-serif">To verify that the OGR/PHP extension
+was installed properly, check PHP's list of loaded extensions by clicking <a href="/phpinfo.php">here</a>.</font>
+<p><font face="Helvetica, Arial, sans-serif">If the PHP/OGR extension was successfully loaded,
+you should see an "OGR" table stating that OGR support is enabled.<br>
+&nbsp; </font></p>
+<h2> <font face="Helvetica, Arial, sans-serif">Functions documentation</font></h2>
+<font face="Helvetica, Arial, sans-serif"> The C API documentation&nbsp;
+was created using Doxygen and is part of the <a
+ href="http://gdal.org/ogr/ogr__api_8h.html">GDAL/OGR documentation</a>.&nbsp;
+In addition to OGR functions, four CPL functions for handling error are made
+available to the user:&nbsp; CPLErrorReset, CPLGetLastErrorNo, CPLGetLastErrorMsg
+and CPLGetLastErrorType.&nbsp; Information on these functions can be found
+<a href="http://gdal.org/ogr/cpl__error_8h.html">on this page</a>.
+</font>
+<h2> <font face="Helvetica, Arial, sans-serif">Information and bug reporting</font></h2>
+<font face="Helvetica, Arial, sans-serif"> The gdal-dev@lists.osgeo.org mailing list can
+be used for discussion of development and user issues related to OGR and related
+technologies. Subscriptions can be done, and archives reviewed
+<a href="http://lists.osgeo.org/mailman/listinfo/gdal-dev/">on the web</a>.</font>
+<h2> <font face="Helvetica, Arial, sans-serif">Examples</font></h2>
+<font face="Helvetica, Arial, sans-serif"> There are a few examples showing
+how to use the functions in the PHP/OGR extension module.&nbsp; Consult the
+README_EXAMPLES.TXT in the <i>/ms4w/apps/php_ogr/examples</i> directory to get
+more information on what is the purpose of each example.</font>
+<p><font face="Helvetica, Arial, sans-serif">Each example must be invoked
+from the command-line. </font></p>
+<p><font face="Helvetica, Arial, sans-serif">Example:&nbsp; ./php -q ogr2tab.php
+/path/to/outputfilename.tab /path/to/sourcefilename.tab </font></p>
+<p><font face="Helvetica, Arial, sans-serif">"ogr2ogr.php" shows mostly the
+following: <br>
+&nbsp; </font></p>
+<ul>
+ <li><font face="Helvetica, Arial, sans-serif"> Opening an existing data
+source with a specific driver</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Creating a new data source</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Accessing a layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Creating a new layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Adding fields on a layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Getting features from a
+layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Creating new features on
+a layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Testing capabilities of
+a data source or a layer</font></li>
+
+</ul>
+<font face="Helvetica, Arial, sans-serif"> "ogr2tab.php" is accomplishing
+the same operations as "ogr2ogr.php" but is concerned especially with the
+MapInfo File format. </font>
+<p><font face="Helvetica, Arial, sans-serif">"ogr_spatialfilter.php" shows
+mostly how to set a spatial filter and an attribute filter. </font></p>
+<p><font face="Helvetica, Arial, sans-serif">"ogr2tab_spatialfilter.php"
+is accomplishing the same operations as "ogr_spatialfilter.php" but is used
+exclusively with MapInfo File format. </font></p>
+<p><font face="Helvetica, Arial, sans-serif">"ogr_sql.php" demonstrates how
+to build an SQL statement and apply an SQL request to a data source. </font></p>
+<p><font face="Helvetica, Arial, sans-serif">"ogr2tab_sql.php" is a copy
+of "ogr_sql.php" and is concerned with the MapInfo File format. </font></p>
+<p><font face="Helvetica, Arial, sans-serif">"ogr_update.php" demonstrates
+the following items: </font></p>
+<ul>
+ <li><font face="Helvetica, Arial, sans-serif"> Accessing a specific feature
+by specifying a feature id</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Getting a field definition</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Getting a field name</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Setting a field value</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Getting a geometry from
+a feature</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Setting a geometry to a
+feature</font></li>
+
+</ul>
+
+<p><font face="Helvetica, Arial, sans-serif"><br>
+"ogr2tab_update.php" is a copy of "ogr_update.php" but is concerned with
+the MapInfo File format. </font></p>
+<p><font face="Helvetica, Arial, sans-serif">"ogr_dump.php" shows the following
+functionalities: </font></p>
+<ul>
+ <li><font face="Helvetica, Arial, sans-serif"> Getting geometry components
+from which geometry is built from, like point coordinates for a linestring,
+linestring for a polygon and so on</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Getting geometry name</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Getting the number of geometry
+components</font></li>
+
+</ul>
+<font face="Helvetica, Arial, sans-serif"> "ogr_write.php" demonstrates the
+following functionalities: </font>
+<ul>
+ <li><font face="Helvetica, Arial, sans-serif"> Accessing a specific layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Creating a new field definition
+and assigning it to a layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Creating a new feature on
+a layer</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Setting a field value</font></li>
+  <li><font face="Helvetica, Arial, sans-serif"> Creating a new geometry
+(point, linestring, polygon) and adding it to a feature</font></li>
+
+</ul>
+<font face="Helvetica, Arial, sans-serif"> "ogr_setgetfield.php" shows how
+to get and to set field values of various types inside a feature. </font><!-- $Id: php_ogr_documentation.html,v 1.8 2003/10/17 20:02:56 nsavard Exp $ -->
+<br>
+</body>
+</html>

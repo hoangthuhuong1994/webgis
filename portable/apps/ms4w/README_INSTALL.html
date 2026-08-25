@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/" />
+<title>MapServer for Windows (MS4W)</title>
+<meta name="author" content="Jeff McKenna, Gateway Geomatics" />
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="mapserver-for-windows-ms4w">
+<h1 class="title">MapServer for Windows (MS4W)</h1>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Author:</th>
+<td>Jeff McKenna, <a class="last reference external" href="http://www.gatewaygeomatics.com/">Gateway Geomatics</a></td></tr>
+<tr class="field"><th class="docinfo-name">Last Updated:</th><td class="field-body">2014-10-19</td>
+</tr>
+</tbody>
+</table>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#introduction" id="id2">Introduction</a></li>
+<li><a class="reference internal" href="#design" id="id3">Design</a></li>
+<li><a class="reference internal" href="#contents" id="id4">Contents</a><ul>
+<li><a class="reference internal" href="#mapserver-version-information" id="id5">MapServer Version Information</a></li>
+<li><a class="reference internal" href="#mapserver-build-environment" id="id6">MapServer Build Environment</a></li>
+<li><a class="reference internal" href="#mapscript" id="id7">MapScript</a></li>
+<li><a class="reference internal" href="#ogr-formats-supported" id="id8">OGR Formats Supported</a></li>
+<li><a class="reference internal" href="#gdal-formats-supported" id="id9">GDAL Formats Supported</a></li>
+<li><a class="reference internal" href="#directory-structure" id="id10">Directory Structure</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-install-ms4w" id="id11">How to Install MS4W</a><ul>
+<li><a class="reference internal" href="#a-upgrading-from-an-older-version-of-ms4w" id="id12">A. Upgrading from an older version of MS4W</a></li>
+<li><a class="reference internal" href="#b-extracting-ms4w-for-the-first-time" id="id13">B. Extracting MS4W for the first time</a></li>
+<li><a class="reference internal" href="#c-special-notes-for-windows-7-and-vista" id="id14">C. Special Notes for Windows 7 and Vista</a></li>
+<li><a class="reference internal" href="#d-plugins" id="id15">D. Plugins</a><ul>
+<li><a class="reference internal" href="#oracle-10g-11g-12c" id="id16">Oracle 10g &amp; 11g &amp; 12c</a></li>
+<li><a class="reference internal" href="#sde" id="id17">SDE</a></li>
+<li><a class="reference internal" href="#microsoft-sql-server-2008" id="id18">Microsoft SQL Server 2008</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#e-mapscript-configuration" id="id19">E. MapScript configuration</a><ul>
+<li><a class="reference internal" href="#csharp" id="id20">CSharp</a></li>
+<li><a class="reference internal" href="#java" id="id21">Java</a></li>
+<li><a class="reference internal" href="#python" id="id22">Python</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#f-fastcgi" id="id23">F. FastCGI</a></li>
+<li><a class="reference internal" href="#g-mapcache-apache-module" id="id24">G. MapCache Apache Module</a></li>
+<li><a class="reference internal" href="#h-certificates-for-https-with-wms-wfs-servers" id="id25">H. Certificates for HTTPS with WMS/WFS Servers</a></li>
+<li><a class="reference internal" href="#i-using-the-python-gdal-module" id="id26">I. Using the Python GDAL Module</a></li>
+<li><a class="reference internal" href="#j-troubleshooting" id="id27">J. Troubleshooting</a></li>
+<li><a class="reference internal" href="#k-modifying-ms4w-for-an-installation-not-at-the-drive-root" id="id28">K. Modifying MS4W for an Installation not at the Drive Root</a></li>
+<li><a class="reference internal" href="#l-installing-the-ms4w-mapserver-binaries-in-other-environments" id="id29">L. Installing the MS4W MapServer Binaries in Other Environments</a></li>
+<li><a class="reference internal" href="#m-using-custom-epsg-projections" id="id30">M. Using Custom EPSG Projections</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#password-protection-configuration-for-applications" id="id31">Password Protection Configuration for Applications</a></li>
+<li><a class="reference internal" href="#ms4w-applications" id="id32">MS4W Applications</a></li>
+<li><a class="reference internal" href="#additional-support" id="id33">Additional Support</a></li>
+<li><a class="reference internal" href="#about-this-document" id="id34">About this Document</a><ul>
+<li><a class="reference internal" href="#copyright-licensing-information" id="id35">Copyright/Licensing Information</a></li>
+<li><a class="reference internal" href="#component-licensing" id="id36">Component Licensing</a><ul>
+<li><a class="reference internal" href="#mapserver" id="id37">MapServer</a></li>
+<li><a class="reference internal" href="#gdal" id="id38">GDAL</a></li>
+<li><a class="reference internal" href="#mrsid" id="id39">MrSID</a></li>
+<li><a class="reference internal" href="#freetype" id="id40">FreeType</a></li>
+<li><a class="reference internal" href="#apache" id="id41">Apache</a></li>
+<li><a class="reference internal" href="#php" id="id42">PHP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h1><a class="toc-backref" href="#table-of-contents">Introduction</a></h1>
+<p>Welcome to MS4W, the quick and easy installer for setting
+up MapServer For Windows and its accompanying applications
+(e.g., Chameleon, MapLab,etc.). The purpose of this package
+is to allow novice to advanced MapServer users to quickly
+install a MapServer development environment on their
+Windows systems. The reasons for needing to do this are
+diverse but, in general, this package supports: developers
+who want to get to a stable state quickly, trainers who
+need an easily-installed configuration identical across
+multiple installs, and novices who need help just getting
+all the needed bits and pieces together.</p>
+</div>
+<div class="section" id="design">
+<h1><a class="toc-backref" href="#table-of-contents">Design</a></h1>
+<p>The MS4W package is designed to perform a full installation
+of Apache, PHP, MapServer CGI, MapScript (CSharp, Java,
+PHP, Python), and to provide the capability to install
+additional applications easily and quickly. The simplest
+way to do this on Windows is to provide a predetermined
+directory structure and force everything into that mold.</p>
+<p>The directory structure, while fixed within itself, is
+designed to be somewhat portable. While the ms4w_xxx.zip
+file needs to be installed at the root of a hard drive,
+it doesn't have to be the C:/ drive. Moving the package
+to the root of a different drive is simple - just copy
+it there. To move it to a subdirectory is more difficult
+- you'll need to search for /ms4w in all the files and
+replace it with your new path.</p>
+<p>The design also accommodates simple upgrades to the core
+package and to applications, without affecting the local
+configuration or the configuration of other installed
+applications.</p>
+</div>
+<div class="section" id="contents">
+<h1><a class="toc-backref" href="#table-of-contents">Contents</a></h1>
+<p>The following are included in the base package:</p>
+<ul class="simple">
+<li>Apache version 2.4.10</li>
+<li>PHP version 5.4.34</li>
+<li>MapServer 6.4.1 CGI and MapScript (PHP)</li>
+<li>GDAL 1.11.1</li>
+<li>mapserver utilities</li>
+<li>gdal/ogr utilities</li>
+<li>proj.4 utilities</li>
+<li>shp2tile utility</li>
+<li>shapelib utilities</li>
+<li>shpdiff utility</li>
+<li>avce00 utilities</li>
+<li>OWTChart 1.2.0</li>
+</ul>
+<div class="section" id="mapserver-version-information">
+<h2><a class="toc-backref" href="#table-of-contents">MapServer Version Information</a></h2>
+<pre class="literal-block">
+MapServer version 6.4.1 OUTPUT=GIF OUTPUT=PNG OUTPUT=JPEG
+OUTPUT=KML SUPPORTS=PROJ SUPPORTS=GD SUPPORTS=AGG
+SUPPORTS=FREETYPE SUPPORTS=CAIRO SUPPORTS=ICONV
+SUPPORTS=FRIBIDI SUPPORTS=WMS_SERVER SUPPORTS=WMS_CLIENT
+SUPPORTS=WFS_SERVER SUPPORTS=WFS_CLIENT
+SUPPORTS=WCS_SERVER SUPPORTS=SOS_SERVER SUPPORTS=FASTCGI
+SUPPORTS=THREADS SUPPORTS=GEOS INPUT=JPEG INPUT=POSTGIS
+INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE
+</pre>
+</div>
+<div class="section" id="mapserver-build-environment">
+<h2><a class="toc-backref" href="#table-of-contents">MapServer Build Environment</a></h2>
+<p>Compiled, packaged, documented, and tested by <a class="reference external" href="http://www.gatewaygeomatics.com/">Gateway Geomatics</a>.
+Please help support this great product that is downloaded
+over 5,000 times a month by organizations of all sizes -
+please contact us directly at <a class="reference external" href="mailto:info&#64;gatewaygeomatics.com">info&#64;gatewaygeomatics.com</a> for
+custom builds or requests.  Thank you in advance for your
+generous support!</p>
+<p>Library versions used to build this version of MapServer:</p>
+<pre class="literal-block">
+agg-2.4
+apache-ant-1.7.0
+cairo-1.12.16
+curl-7.37.0
+expat-2.1.0
+fcgi-2.4.0
+filegdb-1.3
+fits-3.14
+freetype-2.5.3
+fribidi-0.19.1
+gd-2.0.35
+gdal-1.11.1
+geos-3.4.2
+gettext-0.13
+giflib-4.1.6
+hdf5-1.8.10-patch1
+jbigkit-1.6
+jpeg-9a
+libgeotiff-1.4.0
+libiconv-1.11.1
+libintl-0.11.5
+libKML-git-07112014
+libpng-1.6.1
+libtiff-4.0.3
+libxml2-2.9.1
+mapserver-6.4.1
+ming-0.2a
+mrsid-9.1
+mysql-5.1.34-win32
+netcdf-3.6.1
+openssl-1.0.1h
+oracle-12.1.0.1.0
+pcre-svn-05252012
+php-5.4.34
+poppler-0.26.2
+postgresql-9.3.4
+proj-4.8.0
+sqlite-3.3.8
+swig-1.3.39
+szip-2.1
+xerces-c-3.1.1
+zlib-1.2.8
+</pre>
+</div>
+<div class="section" id="mapscript">
+<h2><a class="toc-backref" href="#table-of-contents">MapScript</a></h2>
+<ul class="simple">
+<li>C# MapScript: compiled against .NET v3.5</li>
+<li>PHP MapScript: built for PHP 5</li>
+</ul>
+</div>
+<div class="section" id="ogr-formats-supported">
+<h2><a class="toc-backref" href="#table-of-contents">OGR Formats Supported</a></h2>
+<p>See the <a class="reference external" href="http://www.gdal.org/ogr/ogr_formats.html">OGR formats page</a> for full driver descriptions.</p>
+<pre class="literal-block">
+&quot;ESRI Shapefile&quot; (read/write)
+&quot;MapInfo File&quot; (read/write)
+&quot;UK .NTF&quot; (readonly)
+&quot;SDTS&quot; (readonly)
+&quot;TIGER&quot; (read/write)
+&quot;S57&quot; (read/write)
+&quot;DGN&quot; (read/write)
+&quot;VRT&quot; (readonly)
+&quot;REC&quot; (readonly)
+&quot;Memory&quot; (read/write)
+&quot;BNA&quot; (read/write)
+&quot;CSV&quot; (read/write)
+&quot;NAS&quot; (readonly)
+&quot;GML&quot; (read/write)
+&quot;GPX&quot; (read/write)
+&quot;LIBKML&quot; (read/write)
+&quot;KML&quot; (read/write)
+&quot;GeoJSON&quot; (read/write)
+&quot;GMT&quot; (read/write)
+&quot;SQLite&quot; (read/write)
+&quot;ODBC&quot; (read/write)
+&quot;PGeo&quot; (readonly)
+&quot;MSSQLSpatial&quot; (read/write)
+&quot;PostgreSQL&quot; (read/write)
+&quot;MySQL&quot; (read/write)
+&quot;PCIDSK&quot; (read/write)
+&quot;FileGDB&quot; (read/write)
+&quot;XPlane&quot; (readonly)
+&quot;AVCBin&quot; (readonly)
+&quot;AVCE00&quot; (readonly)
+&quot;DXF&quot; (read/write)
+&quot;Geoconcept&quot; (read/write)
+&quot;GeoRSS&quot; (read/write)
+&quot;GPSTrackMaker&quot; (read/write)
+&quot;VFK&quot; (readonly)
+&quot;PGDump&quot; (read/write)
+&quot;OSM&quot; (readonly)
+&quot;GPSBabel&quot; (read/write)
+&quot;SUA&quot; (readonly)
+&quot;OpenAir&quot; (readonly)
+&quot;PDS&quot; (readonly)
+&quot;WFS&quot; (readonly)
+&quot;HTF&quot; (readonly)
+&quot;AeronavFAA&quot; (readonly)
+&quot;Geomedia&quot; (readonly)
+&quot;EDIGEO&quot; (readonly)
+&quot;GFT&quot; (read/write)
+&quot;SVG&quot; (readonly)
+&quot;CouchDB&quot; (read/write)
+&quot;Idrisi&quot; (readonly)
+&quot;ARCGEN&quot; (readonly)
+&quot;SEGUKOOA&quot; (readonly)
+&quot;SEGY&quot; (readonly)
+&quot;ODS&quot; (read/write)
+&quot;XLSX&quot; (read/write)
+&quot;ElasticSearch&quot; (read/write)
+&quot;PDF&quot; (read/write)
+
+ Oracle - see `GDAL/OGR Plugins` section of this document to enable
+ SDE - see `GDAL/OGR Plugins` section of this document to enable
+</pre>
+</div>
+<div class="section" id="gdal-formats-supported">
+<h2><a class="toc-backref" href="#table-of-contents">GDAL Formats Supported</a></h2>
+<p>See the <a class="reference external" href="http://www.gdal.org/formats_list.html">GDAL formats page</a> for full driver descriptions.</p>
+<pre class="literal-block">
+VRT (rw+v): Virtual Raster
+GTiff (rw+vs): GeoTIFF
+NITF (rw+vs): National Imagery Transmission Format
+RPFTOC (rovs): Raster Product Format TOC format
+ECRGTOC (rovs): ECRG TOC format
+HFA (rw+v): Erdas Imagine Images (.img)
+SAR_CEOS (rov): CEOS SAR Image
+CEOS (rov): CEOS Image
+JAXAPALSAR (rov): JAXA PALSAR Product Reader (Level 1.1/1.5)
+GFF (rov): Ground-based SAR Applications Testbed File Format (.gff)
+ELAS (rw+v): ELAS
+AIG (rov): Arc/Info Binary Grid
+AAIGrid (rwv): Arc/Info ASCII Grid
+GRASSASCIIGrid (rov): GRASS ASCII Grid
+SDTS (rov): SDTS Raster
+DTED (rwv): DTED Elevation Raster
+PNG (rwv): Portable Network Graphics
+JPEG (rwv): JPEG JFIF
+MEM (rw+): In Memory Raster
+JDEM (rov): Japanese DEM (.mem)
+GIF (rwv): Graphics Interchange Format (.gif)
+BIGGIF (rov): Graphics Interchange Format (.gif)
+ESAT (rov): Envisat Image Format
+FITS (rw+): Flexible Image Transport System
+BSB (rov): Maptech BSB Nautical Charts
+XPM (rwv): X11 PixMap Format
+BMP (rw+v): MS Windows Device Independent Bitmap
+DIMAP (rov): SPOT DIMAP
+AirSAR (ro): AirSAR Polarimetric Image
+RS2 (ros): RadarSat 2 XML Product
+PCIDSK (rw+v): PCIDSK Database File
+PCRaster (rw): PCRaster Raster File
+ILWIS (rw+v): ILWIS Raster Map
+SGI (rw+): SGI Image File Format 1.0
+SRTMHGT (rwv): SRTMHGT File Format
+Leveller (rw+): Leveller heightfield
+Terragen (rw+): Terragen heightfield
+GMT (rw): GMT NetCDF Grid Format
+netCDF (rw+s): Network Common Data Format
+ISIS3 (rov): USGS Astrogeology ISIS cube (Version 3)
+ISIS2 (rw+v): USGS Astrogeology ISIS cube (Version 2)
+PDS (rov): NASA Planetary Data System
+TIL (rov): EarthWatch .TIL
+ERS (rw+v): ERMapper .ers Labelled
+L1B (rov): NOAA Polar Orbiter Level 1b Data Set
+FIT (rwv): FIT Image
+GRIB (rov): GRIdded Binary (.grb)
+MrSID (rov): Multi-resolution Seamless Image Database (MrSID)
+JP2MrSID (rov): MrSID JPEG2000
+MG4Lidar (ro): MrSID Generation 4 / Lidar (.sid)
+RMF (rw+v): Raster Matrix Format
+WCS (rovs): OGC Web Coverage Service
+WMS (rwvs): OGC Web Map Service
+MSGN (ro): EUMETSAT Archive native (.nat)
+RST (rw+v): Idrisi Raster A.1
+INGR (rw+v): Intergraph Raster
+GSAG (rwv): Golden Software ASCII Grid (.grd)
+GSBG (rw+v): Golden Software Binary Grid (.grd)
+GS7BG (rw+v): Golden Software 7 Binary Grid (.grd)
+COSAR (ro): COSAR Annotated Binary Matrix (TerraSAR-X)
+TSX (rov): TerraSAR-X Product
+COASP (ro): DRDC COASP SAR Processor Raster
+R (rwv): R Object Data Store
+MAP (rov): OziExplorer .MAP
+PNM (rw+v): Portable Pixmap Format (netpbm)
+DOQ1 (rov): USGS DOQ (Old Style)
+DOQ2 (rov): USGS DOQ (New Style)
+ENVI (rw+v): ENVI .hdr Labelled
+EHdr (rw+v): ESRI .hdr Labelled
+GenBin (rov): Generic Binary (.hdr Labelled)
+PAux (rw+): PCI .aux Labelled
+MFF (rw+): Vexcel MFF Raster
+MFF2 (rw+): Vexcel MFF2 (HKV) Raster
+FujiBAS (ro): Fuji BAS Scanner Image
+GSC (rov): GSC Geogrid
+FAST (rov): EOSAT FAST Format
+BT (rw+v): VTP .bt (Binary Terrain) 1.3 Format
+LAN (rw+v): Erdas .LAN/.GIS
+CPG (ro): Convair PolGASP
+IDA (rw+): Image Data and Analysis
+NDF (rov): NLAPS Data Format
+EIR (rov): Erdas Imagine Raw
+DIPEx (rov): DIPEx
+LCP (rov): FARSITE v.4 Landscape File (.lcp)
+GTX (rw+v): NOAA Vertical Datum .GTX
+LOSLAS (rov): NADCON .los/.las Datum Grid Shift
+NTv2 (rw+vs): NTv2 Datum Grid Shift
+CTable2 (rw+v): CTable2 Datum Grid Shift
+ACE2 (rov): ACE2
+SNODAS (rov): Snow Data Assimilation System
+ARG (rwv): Azavea Raster Grid format
+RIK (ro): Swedish Grid RIK (.rik)
+USGSDEM (rwv): USGS Optional ASCII DEM (and CDED)
+GXF (ro): GeoSoft Grid Exchange Format
+HTTP (ro): HTTP Fetching Wrapper
+BAG (ro): Bathymetry Attributed Grid
+HDF5 (ros): Hierarchical Data Format Release 5
+HDF5Image (ro): HDF5 Dataset
+NWT_GRD (rov): Northwood Numeric Grid Format .grd/.tab
+NWT_GRC (rov): Northwood Classified Grid Format .grc/.tab
+ADRG (rw+vs): ARC Digitized Raster Graphics
+SRP (rov): Standard Raster Product (ASRP/USRP)
+BLX (rw): Magellan topo (.blx)
+Rasterlite (rws): Rasterlite
+PostGISRaster (rws): PostGIS Raster driver
+SAGA (rw+v): SAGA GIS Binary Grid (.sdat)
+KMLSUPEROVERLAY (rwv): Kml Super Overlay
+XYZ (rwv): ASCII Gridded XYZ
+HF2 (rwv): HF2/HFZ heightfield raster
+PDF (rwvs): Geospatial PDF
+OZI (rov): OziExplorer Image File
+CTG (rov): USGS LULC Composite Theme Grid
+E00GRID (rov): Arc/Info Export E00 GRID
+ZMap (rwv): ZMap Plus Grid
+NGSGEOID (rov): NOAA NGS Geoid Height Grids
+MBTiles (rov): MBTiles
+IRIS (rov): IRIS data (.PPI, .CAPPi etc)
+
+SDE raster - see `GDAL/OGR Plugins` section of this
+             document to enable
+</pre>
+</div>
+<div class="section" id="directory-structure">
+<h2><a class="toc-backref" href="#table-of-contents">Directory Structure</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>ms4w/</dt>
+<dd><ul class="first last simple">
+<li>the main directory, assumed to be at the root of a
+drive, normally C:</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache</dt>
+<dd><ul class="first last simple">
+<li>the Apache installation</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/bin</dt>
+<dd><ul class="first last simple">
+<li>the Apache binaries</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/cgi-bin</dt>
+<dd><ul class="first last simple">
+<li>the location of mapserv.exe and its supporting
+libraries, and php.ini, php.exe.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/cgi-bin/ignored-libmap</dt>
+<dd><ul class="first last simple">
+<li>location of the libmap dll for Oracle
+(see the &quot;Plugins&quot; section of this document)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/cgi-bin/mapscript</dt>
+<dd><ul class="first last simple">
+<li>location of CSharp,Java, and Python mapscript files</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/conf</dt>
+<dd><ul class="first last simple">
+<li>the Apache configuration files. These should not be
+modified.  Place all application-specific and local
+httpd.conf files in /ms4w/httpd.d (see the README.txt
+in that directory)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/error</dt>
+<dd><ul class="first last simple">
+<li>error files for Apache to use</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/htdocs</dt>
+<dd><ul class="first last simple">
+<li>the Apache Web root directory, you shouldn't install
+much in here except perhaps for testing.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/icons</dt>
+<dd><ul class="first last simple">
+<li>icons used by Apache</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/include</dt>
+<dd><ul class="first last simple">
+<li>include directory for compiling against Apache</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/lib</dt>
+<dd><ul class="first last simple">
+<li>lib files for building against Apache</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/logs</dt>
+<dd><ul class="first last simple">
+<li>log files for Apache are stored here, this should be
+archived or cleaned every so often.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/manual</dt>
+<dd><ul class="first last simple">
+<li>the Apache manual pages.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/modules</dt>
+<dd><ul class="first last simple">
+<li>modules for Apache</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/php</dt>
+<dd><ul class="first last simple">
+<li>the PHP installation</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/php/ext</dt>
+<dd><ul class="first last simple">
+<li>location of phpmapscript dll</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/proxy</dt>
+<dd><ul class="first last simple">
+<li>apache proxy configurations, not used by MS4W</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/Apache/specialplugins</dt>
+<dd><ul class="first last simple">
+<li>location of the plugin dlls for MapServer
+(see the &quot;Plugins&quot; section of this document)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/apps</dt>
+<dd><ul class="first last simple">
+<li>put all applications in subdirectories here.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/gdaldata</dt>
+<dd><ul class="first last simple">
+<li>supporting files for GDAL data formats</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/gdalplugins</dt>
+<dd><ul class="first last simple">
+<li>place dlls here that are required for gdal plugins
+e.g. 'oci_OCI.dll'</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/httpd.d</dt>
+<dd><ul class="first last simple">
+<li>put all application-specific and local httpd.conf files
+here (see the README.txt in that directory)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/proj</dt>
+<dd><ul class="first last simple">
+<li>an installation of PROJ.4</li>
+<li>the epsg file used is /ms4w/proj/nad/epsg</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/python</dt>
+<dd><ul class="first last simple">
+<li>associated python files, including gdal bindings
+and a simple test script</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/tmp</dt>
+<dd><ul class="first last simple">
+<li>temporary files go here. This should be cleaned
+regularly</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/tmp/ms_tmp</dt>
+<dd><ul class="first last simple">
+<li>temporary files that need to be Web-accessible go
+here (i.e. image files created by mapserver). This is
+available as /ms_tmp/ via URL. Normally this means
+that your MAP files would have an IMAGEPATH of
+/ms4w/tmp/ms_tmp/ and a IMAGEURL of /ms_tmp/</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ms4w/tools</dt>
+<dd><ul class="first last simple">
+<li>contains useful tools such as the gdal/ogr utilities
+and mapserv utilities (note that before running these
+you must execute the /ms4w/setenv.bat script in
+your command window)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="how-to-install-ms4w">
+<h1><a class="toc-backref" href="#table-of-contents">How to Install MS4W</a></h1>
+<div class="section" id="a-upgrading-from-an-older-version-of-ms4w">
+<h2><a class="toc-backref" href="#table-of-contents">A. Upgrading from an older version of MS4W</a></h2>
+<p>If you already have MS4W installed please do the following:</p>
+<ul class="simple">
+<li>open a DOS command window and execute the file
+'/ms4w/apache-uninstall.bat' at the commandline.  This
+file will stop and uninstall your Apache service.  You
+should see the following message flash in the command
+window:</li>
+</ul>
+<pre class="literal-block">
+The &quot;Apache MS4W Web Server&quot; service is stopping.
+The &quot;Apache MS4W Web Server&quot; service has stopped.
+
+Removing the &quot;Apache MS4W Web Server&quot; service
+The &quot;Apache MS4W Web Server&quot; service has been removed
+successfully.
+</pre>
+<ul class="simple">
+<li>your old apache service has now been removed</li>
+<li>make sure no files or other services point the your ms4w
+folder.  If your browser is currently open and you are a
+viewing an ms4w page you will not be able to rename the
+ms4w folder.  Therefore you must close all ms4w documents,
+all ms4w browser windows...make sure no running files
+point to the ms4w folder.</li>
+<li>rename the old ms4w folder to something like 'ms4w-old'</li>
+<li>extract the ms4w_xx.zip file to the root of a
+drive on your machine</li>
+<li>if successful, you should have a new directory named 'ms4w'
+at the root of the drive you chose (e.g. C:/ms4w or D:/ms4w ).</li>
+<li>follow the rest of the install instructions in
+/ms4w/README_INSTALL.txt to start apache...</li>
+</ul>
+</div>
+<div class="section" id="b-extracting-ms4w-for-the-first-time">
+<h2><a class="toc-backref" href="#table-of-contents">B. Extracting MS4W for the first time</a></h2>
+<p>Please read through the following instructions before
+starting your installation.</p>
+<ol class="arabic">
+<li><p class="first">To install the MS4W .zip file, use a compression program
+(e.g. WinZip) to extract the package at the root of a
+drive, e.g., drive C:. If successful, you should have a
+new directory named 'ms4w' at the root of the drive you
+chose (e.g. C:/ms4w).</p>
+</li>
+<li><p class="first">Start your MS4W Apache Web Server by running
+/ms4w/apache-install.bat (at the command line or by
+double-clicking it). This file installs Apache as a
+Windows service (called &quot;Apache Web Server&quot;) so that it
+starts whenever your machine is restarted.  When
+executed, a DOS window should pop up with the following
+message:</p>
+<pre class="literal-block">
+Installing the Apache MS4W Web Server service
+The Apache MS4W Web Server service is successfully installed.
+Testing httpd.conf....
+Errors reported here must be corrected before the service
+can be started.
+The Apache MS4W Web Server service is starting.
+The Apache MS4W Web Server service was started successfully.
+</pre>
+<p>This means that Apache is running and installed as a
+service.</p>
+<p><strong>NOTE for Win95,98,ME users:</strong></p>
+<p>You will not be able to install Apache as a service, so
+instead you will have to manually start Apache each time,
+by clicking on /ms4w/Apache/bin/httpd.exe.  An empty DOS
+window will open, which means Apache is running.  To stop
+Apache you will have to close this empty DOS window.</p>
+</li>
+<li><p class="first">To test that Apache is running properly, open your Web
+browser and find your local host Web service by entering
+one of the following URLs:</p>
+<pre class="literal-block">
+http://localhost/
+
+or
+
+http://127.0.0.1/
+</pre>
+<p>You should now see the main MS4W page in your Web
+browser. This gives you general information about your
+install along with configuration information. If this is
+your first time using MS4W it is very important that you
+review the listed &quot;Features&quot; installed within MS4W, and
+test them by selecting each link found on this page.</p>
+</li>
+<li><p class="first">Technically, at this point, MS4W is installed! However,
+as you may have noticed from the MS4W main index.html
+page, there are no applications running. What this means
+is that there are no Web applications like MapLab or
+Chameleon found within MS4W's Web-accessible directory,
+/ms4w/apps/. The MS4W-configured Web applications can
+be found on <a class="reference external" href="http://maptools.org/ms4w/index.phtml?page=downloads.html">http://maptools.org/ms4w/index.phtml?page=downloads.html</a>
+as separate zip files.</p>
+</li>
+<li><p class="first">To install these Web application into /ms4w/apps/ all
+that is required is to unzip the Web application
+compressed file at the same root directory as MS4W
+(e.g., C:).</p>
+<p>Two things should happen when uncompressing this file.
+First, the Web application directory should appear
+within /ms4w/apps/.  Second, a new httpd_*.conf file
+should be added to /ms4w/httpd.d/httpd_*.conf. (The
+/httpd.d/ directory contains Apache configuration files
+that define which files on your computer/server are
+Web-accessible. For each Web application that you
+install, a new configuration file will be found.)</p>
+</li>
+<li><p class="first">The definitions of these Web-accessible directories are
+called Web Aliases. In order to activate a Web Alias you
+must restart Apache.  To test your latest installed
+application, go to the MS4W main index.html page (i.e.,
+<a class="reference external" href="http://localhost/">http://localhost/</a>). In the applications section you
+should now find a link to the application you just
+installed. Select the link to the recently installed
+application to see if it is configured correctly. Another
+option is find the Web Alias for your application and
+call it from your Web browser directly. For example, if
+you have installed the latest MS4W version of MapLab,
+the chances are the Web Alias is &quot;maplab&quot;. To go to the
+MapLab index page, simply enter <a class="reference external" href="http://localhost/maplab/">http://localhost/maplab/</a>.</p>
+<p>Note: Applications with configuration files (e.g., MapLab
+and Chameleon) generally do not require any editing of
+their files in order to work. Just unzip to the
+appropriate driver root and restart Apache.</p>
+<p>WARNING: It is very possible that you may wish (but not
+encouraged!) to run multiple versions of the same
+product. For example, Maplab 2.0 (mapserver_36) vs.
+MapLab 2.1 (mapserver_4.0). When installing these ms4w
+MapLab application packages, you will notice when
+unzipping MapLab that the httpd_maplab.conf file found
+under ./ms4w/httpd.d/ will be overwritten by the MapLab
+you are currently installing. The reason for this is
+that the MapLab Alias stays the same from version to new
+version of MapLab. So, if you overwrite the
+httpd_maplab.conf when unzipping and then restart Apache,
+you will get the latest version of Maplab that you just
+installed. To run both MapLab simply follow the
+instructions in Step 7.</p>
+</li>
+<li><p class="first">You also can create new Web Alias(es). To configure your
+own personal Web Alias(es), follow the instructions in
+/ms4w/httpd.d/README_HTTPD.txt</p>
+</li>
+</ol>
+</div>
+<div class="section" id="c-special-notes-for-windows-7-and-vista">
+<h2><a class="toc-backref" href="#table-of-contents">C. Special Notes for Windows 7 and Vista</a></h2>
+<p>In order to run the apache-install.bat file, you must do
+the following:</p>
+<ol class="arabic simple">
+<li>In Windows Explorer, goto the location of your cmd.exe
+file (C:/Windows/System32)</li>
+<li>Right-click the cmd.exe executable and choose <cite>Run as
+Administrator</cite></li>
+<li>Navigate to your ms4w folder in the command prompt window
+and run apache-install.bat</li>
+</ol>
+</div>
+<div class="section" id="d-plugins">
+<h2><a class="toc-backref" href="#table-of-contents">D. Plugins</a></h2>
+<div class="section" id="oracle-10g-11g-12c">
+<h3><a class="toc-backref" href="#table-of-contents">Oracle 10g &amp; 11g &amp; 12c</a></h3>
+<div class="section" id="steps-to-enable-oracle-10g-or-11g-or-12c-support-in-ms4w">
+<h4>Steps to Enable Oracle 10g or 11g or 12c Support in MS4W</h4>
+<p>Oracle Spatial support in MapServer is handled by two methods:
+1) natively in MapServer, or 2) through the GDAL library.</p>
+<ol class="arabic">
+<li><p class="first">Make sure you have Oracle 10g or 11g client software
+installed on your machine (the same machine that you
+are running MS4W on).</p>
+</li>
+<li><p class="first">For direct access to Oracle Spatial, replace the existing
+libmap.dll in /ms4w/Apache/cgi-bin/ with the one in the
+/ms4w/Apache/cgi-bin/ignored-libmap/oracle11g/
+folder.</p>
+<p>If this is successful, executing the following at the
+commandline (after setting /ms4w/setenv.bat)
+&quot;mapserv -v&quot; should return a string that contains
+&quot;INPUT=ORACLESPATIAL&quot;.</p>
+</li>
+<li><p class="first">For access to Oracle Spatial through the GDAL library,
+move the ogr_OCI.dll plugin file up from
+/ms4w/gdalplugins/ignored/oracle-11g/ into
+/ms4w/gdalplugins/</p>
+<p>If this is successful, executing the following at the
+commandline (after setting /ms4w/setenv.bat)
+&quot;ogrinfo --formats&quot; should list the OCI driver.</p>
+</li>
+<li><p class="first">Restart Apache to be safe.</p>
+</li>
+<li><p class="first">For mapfile configuration see
+<a class="reference external" href="http://www.mapserver.org/input/vector/oracle.html">http://www.mapserver.org/input/vector/oracle.html</a> (note
+that the LAYER syntax differs depending if you use native
+access or through GDAL)</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="sde">
+<h3><a class="toc-backref" href="#table-of-contents">SDE</a></h3>
+<div class="section" id="steps-to-enable-sde-9-1-9-2-9-3-support-in-ms4w">
+<h4>Steps to Enable SDE 9.1, 9.2, 9.3 Support in MS4W</h4>
+<ol class="arabic">
+<li><p class="first">Move the ogr_SDE.dll and gdal_SDE.dll plugin files up from
+/ms4w/gdalplugins/ignored/sde-x/ into /ms4w/gdalplugins/</p>
+</li>
+<li><p class="first">Execute the following at the commandline
+(after setting /ms4w/setenv.bat):</p>
+<pre class="literal-block">
+&quot;ogrinfo --formats&quot;
+</pre>
+<p>(should list the SDE driver)</p>
+<pre class="literal-block">
+&quot;gdalinfo --formats&quot;
+</pre>
+<p>(should list the SDE driver)</p>
+<p><em>Note that you might need to add the ArcGIS location (such as</em>
+<em>C:/Program Files/ArcGIS/Bin) to your system PATH environment</em>
+<em>variable.  You might need to reboot for changes to take effect.</em></p>
+</li>
+<li><p class="first">Create a MapServer LAYER for your SDE connection:</p>
+<p><strong>Raster Layers</strong></p>
+<pre class="literal-block">
+LAYER
+  TYPE RASTER
+  DATA &quot;SDE:hostname,port,database,username,
+                   password,fully.specified.tablename,RASTER&quot;
+  ...
+END
+</pre>
+<p><strong>Vector Layers</strong></p>
+<p>Modify your SDE layer in your mapfile to use the
+CONNECTIONTYPE PLUGIN parameter and point to the appropriate plugin
+using the PLUGIN parameter:</p>
+<p>Example#1: SDE 9.1 layer</p>
+<pre class="literal-block">
+LAYER
+  ...
+  CONNECTIONTYPE PLUGIN
+  CONNECTION &quot;hostname,port:xxx,database,username,password&quot;
+  PLUGIN &quot;C:/ms4w/Apache/specialplugins/msplugin_sde_91.dll&quot;
+  DATA &quot;layername,geometrycolumn,SDE.DEFAULT&quot;
+  ...
+END # layer
+</pre>
+<p>Example#2: SDE 9.2 layer</p>
+<pre class="literal-block">
+LAYER
+  ...
+  CONNECTIONTYPE PLUGIN
+  CONNECTION &quot;hostname,port:xxx,database,username,password&quot;
+  PLUGIN &quot;C:/ms4w/Apache/specialplugins/msplugin_sde_92.dll&quot;
+  DATA &quot;layername,geometrycolumn,SDE.DEFAULT&quot;
+  ...
+END # layer
+</pre>
+<p>See the ArcSDE section of MapServer's Vector Data Access doc
+for help with the CONNECTION and DATA parameters:
+<a class="reference external" href="http://www.mapserver.org/input/vector/arcsde.html">http://www.mapserver.org/input/vector/arcsde.html</a></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="microsoft-sql-server-2008">
+<h3><a class="toc-backref" href="#table-of-contents">Microsoft SQL Server 2008</a></h3>
+<p>A read-only, native MapServer driver that connects to Microsoft SQL
+Server 2008's spatial capabilities is available in MS4W as of version
+2.3.0.</p>
+<div class="section" id="steps-to-enable-sql-server-2008-support-in-ms4w-s-mapserver">
+<h4>Steps to Enable SQL Server 2008 Support in MS4W's MapServer</h4>
+<ol class="arabic">
+<li><p class="first">The plugin exists in
+/ms4w/Apache/specialplugins/msplugin_mssql2008.dll</p>
+</li>
+<li><p class="first">Modify your SQL Server 2008 layer in your mapfile to use the
+CONNECTIONTYPE PLUGIN parameter and point to the appropriate
+plugin using the PLUGIN parameter.  Use the CONNECTION
+parameter to specify the required connection parameters to access
+SQL Server, and use the DATA parameter to specify the table that
+holds the spatial information:</p>
+<pre class="literal-block">
+LAYER
+  ...
+  CONNECTIONTYPE PLUGIN
+  PLUGIN &quot;C:/ms4w/Apache/specialplugins/msplugin_mssql2008.dll&quot;
+  CONNECTION &quot;server=mysqlserver2008.com;uid=dbusername;
+               pwd=dbpassword;database=Roads Database;
+                 Integrated Security=false&quot;
+  DATA &quot;the_geom from roads&quot;
+  TYPE LINE
+  STATUS ON
+  CLASS
+     ...
+  END
+END
+</pre>
+</li>
+<li><p class="first">Test your layer, possibly by using the shp2img commandline utility
+with the '-all_debug 5' switch</p>
+<p>The associated RFC document with the original notes on this support
+is <a class="reference external" href="http://www.mapserver.org/development/rfc/ms-rfc-38.html">RFC 38</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="e-mapscript-configuration">
+<h2><a class="toc-backref" href="#table-of-contents">E. MapScript configuration</a></h2>
+<p>MS4W &gt;= 1.5.0 includes pre-built support files for csharp, java,
+and python mapscript.  In order to make use of these,
+however, they must be installed and configured in the
+appropriate locations on your system.</p>
+<div class="section" id="csharp">
+<h3><a class="toc-backref" href="#table-of-contents">CSharp</a></h3>
+<ol class="arabic simple">
+<li>Files are located in <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin/mapscript/csharp</span></tt></li>
+<li>See <a class="reference external" href="http://www.mapserver.org/installation/dotnet.html">http://www.mapserver.org/installation/dotnet.html</a>
+for installation notes.</li>
+</ol>
+</div>
+<div class="section" id="java">
+<h3><a class="toc-backref" href="#table-of-contents">Java</a></h3>
+<ol class="arabic simple">
+<li>Files are located in <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin/mapscript/java</span></tt></li>
+</ol>
+</div>
+<div class="section" id="python">
+<h3><a class="toc-backref" href="#table-of-contents">Python</a></h3>
+<div class="section" id="obtaining-python">
+<h4>Obtaining Python</h4>
+<p>Obviously, in order to run Python mapscript, you need to have
+a python installed.  The Python mapscript support files
+included in this distribution are built for Python 2.6.x;
+they will not work with earlier or later Python versions.
+Windows Python binaries can be obtained free of charge from
+<a class="reference external" href="http://www.activestate.com/Products/ActivePython/">ActiveState</a> or the <a class="reference external" href="http://www.python.org">Python</a> site.</p>
+<p>See the respective sites for Python installation information.</p>
+</div>
+<div class="section" id="installing-the-python-mapscript-support-files">
+<h4>Installing the Python Mapscript Support Files</h4>
+<div class="section" id="quick-and-dirty-for-use-with-ms4w-only">
+<h5>Quick and dirty (for use with ms4w only)</h5>
+<ol class="arabic">
+<li><p class="first">Unpack <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin/mapscript/python/mapscript*win32.zip</span></tt>
+in a safe location</p>
+</li>
+<li><p class="first">In the directory structure that results from the above
+step, navigate to
+<tt class="docutils literal"><span class="pre">\Python-2.6.2\Lib\site-packages</span></tt></p>
+</li>
+<li><dl class="first docutils">
+<dt>You should find three files there:</dt>
+<dd><ul class="first last simple">
+<li>_mapscript.pyd</li>
+<li>mapscript.py</li>
+<li>mapscript-&lt;version&gt;-py2.6.egg-info</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Copy the three files into the <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin</span></tt>
+directory.</p>
+</li>
+<li><p class="first">Place any python cgi scripts that you want to run under
+ms4w in the <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin</span></tt> directory, and add
+a &quot;shebang&quot; line at the top of each script.  See the
+section on <a class="reference internal" href="#configuring-apache-to-run-python-scripts">Configuring Apache to run Python scripts</a>
+below for shebang-line details.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="more-robust-for-system-wide-access">
+<h5>More robust (for system-wide access)</h5>
+<ol class="arabic">
+<li><p class="first">Unpack <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin/mapscript/python/mapscript*win32.zip</span></tt>
+in a safe location</p>
+</li>
+<li><p class="first">In the directory structure that results from the above
+step, navigate to <tt class="docutils literal"><span class="pre">\Python-2.6.2\Lib\site-packages</span></tt></p>
+</li>
+<li><dl class="first docutils">
+<dt>You should find three files there:</dt>
+<dd><ul class="first last simple">
+<li>_mapscript.pyd</li>
+<li>mapscript.py</li>
+<li>mapscript.pyc</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Copy the three files into the site-packages directory of
+your Python 2.6.x installation
+(eg., <tt class="docutils literal"><span class="pre">C:\Python26\Lib\site-packages</span></tt>)</p>
+</li>
+<li><p class="first">Add <tt class="docutils literal"><span class="pre">&lt;drive_letter&gt;:\ms4w\Apache\cgi-bin</span></tt> to your
+system's PYTHONPATH environment variable.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="configuring-apache-to-run-python-scripts">
+<h4>Configuring Apache to Run Python Scripts</h4>
+<p>You have a couple of options here:</p>
+<div class="section" id="via-shebang-lines">
+<h5>via shebang lines</h5>
+<p>This may be the preferred approach if you have multiple
+Python installations on your machine.</p>
+<p>Add a &quot;shebang line&quot; to the top of each python cgi script
+in <tt class="docutils literal"><span class="pre">/ms4w/apache/cgi-bin</span></tt>.  This line must be the first
+line in the script, and it must begin with #! followed by
+the path to your systems python executable.  For example:</p>
+<pre class="literal-block">
+#!c:/python26/python.exe -u
+</pre>
+<p>The <tt class="docutils literal"><span class="pre">-u</span></tt> option shown above causes the script to use
+unbuffered output, which is generally what you need in
+web-serving contexts.</p>
+</div>
+<div class="section" id="via-apache-directives">
+<h5>via Apache directives</h5>
+<p>This approach obviates the need to edit every python script
+in your cgi-bin directory; however, it may be problematic
+if you have multiple Python installations.</p>
+<p>Add the following line to the end of
+<tt class="docutils literal">ms4w/Apache/conf/httpd.conf</tt>:</p>
+<pre class="literal-block">
+ScriptInterpreterSource Registry
+</pre>
+<p>You may also want to add these:</p>
+<pre class="literal-block">
+SetEnv PYTHONUNBUFFERED 1
+PassEnv PYTHONPATH
+</pre>
+<p>The first of the above lines causes your python scripts to
+use unbuffered output (which you probably want), while the
+second passes the value of your system's PYTHONPATH
+environment variable through to Apache's environment
+(if set).</p>
+</div>
+</div>
+<div class="section" id="testing-the-configuration">
+<h4>Testing the Configuration</h4>
+<p>Follow these steps to test your Python MapScript
+installation:</p>
+<ol class="arabic">
+<li><p class="first">Move the file <tt class="docutils literal"><span class="pre">/ms4w/python/test-cgi-mapscript.py</span></tt>
+into the <tt class="docutils literal"><span class="pre">/ms4w/Apache/cgi-bin/</span></tt> folder.</p>
+</li>
+<li><p class="first">Open the file in a text editor.</p>
+</li>
+<li><p class="first">Edit the first line of that script to point to your
+proper Python path.</p>
+</li>
+<li><p class="first">In your web browser goto
+<a class="reference external" href="http://127.0.0.1/cgi-bin/test-cgi-mapscript.py">http://127.0.0.1/cgi-bin/test-cgi-mapscript.py</a></p>
+</li>
+<li><p class="first">The script tests that the Python CGI is working, and
+that the mapscript module can be successfully imported.</p>
+<p>If successful you will see an HTML page listing several
+environment settings on your machine, as well a list of
+the Python MapScript module attributes at the bottom
+of the page.</p>
+</li>
+</ol>
+<p>Python Troubleshooting:</p>
+<ul class="simple">
+<li>If you get an Internal Server Error check the Apache logs
+for info.</li>
+<li>Make sure your script points to a valid Python installation
+path.</li>
+<li>Make sure you are using a recent Python version
+(containing the cgitb module).</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="f-fastcgi">
+<h2><a class="toc-backref" href="#table-of-contents">F. FastCGI</a></h2>
+<p>In order to use FastCGI you must do the following:</p>
+<ol class="arabic">
+<li><p class="first">Open /ms4w/Apache/conf/httpd.conf in a text editor</p>
+</li>
+<li><p class="first">Uncomment line#130, such as:</p>
+<pre class="literal-block">
+LoadModule fcgid_module modules/mod_fcgid.so
+</pre>
+</li>
+<li><p class="first">At the bottom of the file you will see a commented
+&quot;&lt;IfModule fcgid_module&gt;&quot; section.  If you want to use
+FastCGI directives (listed on the <a class="reference external" href="http://httpd.apache.org/mod_fcgid/mod/mod_fcgid.html">mod_fcgid</a>
+page) you can uncomment the section and add your
+directives, such as:</p>
+<pre class="literal-block">
+&lt;IfModule fcgid_module&gt;
+   FcgidMinProcessesPerClass 0
+   FcgidIdleScanInterval 1
+   FcgidProcessLifeTime 10
+&lt;/IfModule&gt;
+</pre>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">If you are connecting to an Oracle database using FastCGI, you
+must also add your Oracle Bin directory (where the 'oci.dll'
+file exists) to the PATH variable above, such as:</p>
+<pre class="literal-block">
+&lt;IfModule fcgid_module&gt;
+    ...
+    FcgidInitialEnv PATH &quot;c:/oracle/product/10.2.0/client/BIN&quot;
+    ...
+&lt;/IfModule&gt;
+</pre>
+</li>
+<li><p class="first">Save the file and restart apache (execute /ms4w/apache-restart.bat)</p>
+</li>
+<li><p class="first">Change your CGI application to point to &quot;/fcgi-bin/mapserv.exe&quot;
+instead of the usual &quot;/cgi-bin/mapserv.exe&quot;</p>
+</li>
+<li><p class="first">Add the following parameter to your layer for which you
+want this FastCGI connection:</p>
+<pre class="literal-block">
+PROCESSING &quot;CLOSE_CONNECTION=DEFER&quot;
+</pre>
+</li>
+<li><p class="first">Try the application.  If successful you should see the
+&quot;mapserv.exe&quot; process in the Windows Task Manager remain open
+while the user interacts with your application.</p>
+</li>
+</ol>
+<p>Notes:</p>
+<ul class="simple">
+<li>in testing this was successful with PostgreSQL 9.0.4 / PostGIS 1.5.2,
+and with Oracle 10.2.0.1.0.</li>
+<li>general MapServer and FastCGI notes can be found in the
+<a class="reference external" href="http://www.mapserver.org/optimization/fastcgi.html">FastCGI Howto</a>.</li>
+</ul>
+</div>
+<div class="section" id="g-mapcache-apache-module">
+<h2><a class="toc-backref" href="#table-of-contents">G. MapCache Apache Module</a></h2>
+<p>The MapCache Apache module and the mapcache_seed.exe utility (as of
+Mar 21, 2013 build) are included. In order to use the MapCache Apache
+module you must do the following:</p>
+<ol class="arabic">
+<li><p class="first">Open /ms4w/Apache/conf/httpd.conf in a text editor</p>
+</li>
+<li><p class="first">Uncomment line#131, and change to your correct path, such as:</p>
+<pre class="literal-block">
+LoadModule mapcache_module &quot;C:/ms4w/Apache/cgi-bin/mod_mapcache.dll&quot;
+</pre>
+</li>
+<li><p class="first">Around line#370 of your httpd.conf file you will see a
+&quot;&lt;IfModule mapcache_module&gt;&quot; section.  Modify the path
+to the included MapCache configuration (XML) file, such as:</p>
+<pre class="literal-block">
+&lt;IfModule mapcache_module&gt;
+   &lt;Directory &quot;/ms4w/apps/mapcache/&quot;&gt;
+      Order Allow,Deny
+      Allow from all
+   &lt;/Directory&gt;
+   MapCacheAlias /mapcache &quot;C:/ms4w/apps/mapcache/mapcache.xml&quot;
+&lt;/IfModule&gt;
+</pre>
+</li>
+<li><p class="first">Modify the mapcache.xml file.  Please see the associated <a class="reference external" href="http://www.mapserver.org/trunk/mapcache/config.html">MapCache docs</a>
+for assistance.</p>
+</li>
+</ol>
+<ol class="arabic" start="5">
+<li><p class="first">Save your httpd.conf file and restart apache (execute /ms4w/apache-restart.bat)</p>
+</li>
+<li><p class="first">If the module was successfully loaded your /ms4w/Apache/logs/error.log
+file should contain a message similar to:</p>
+<pre class="literal-block">
+[notice] Apache/2.2.24 (Win32) mod-mapcache/0.5-dev configured
+-- resuming normal operations
+</pre>
+</li>
+<li><p class="first">Test your MapCache configuration by following steps in the associated
+<a class="reference external" href="http://www.mapserver.org/trunk/mapcache/install.html#test-your-mapcache-module">MapCache testing docs</a></p>
+</li>
+<li><p class="first">The <a class="reference external" href="http://www.mapserver.org/trunk/mapcache/seed.html">MapCache seeding utility</a> is also included.  To run the
+mapcache_seed.exe file be sure to first execute the /ms4w/setenv.bat
+file in your command window.</p>
+</li>
+</ol>
+<p>Notes:</p>
+<ul>
+<li><p class="first">this module was tested with the cache types: disk, sqlite, tiff, and berkeleyDB.
+You should follow the <a class="reference external" href="http://www.mapserver.org/trunk/mapcache/caches.html">MapCache Cache Types docs</a> for assistance,
+or contact <a class="reference external" href="http://www.gatewaygeomatics.com/">Gateway Geomatics</a> for assistance/custom builds/configurations.</p>
+<blockquote>
+</blockquote>
+</li>
+<li><p class="first">the module was tested on Windows 7 and Vista; if you are using an older
+version of Windows and require this module you should consider upgrading,
+or contact <a class="reference external" href="http://www.gatewaygeomatics.com/">Gateway Geomatics</a> for assistance/custom builds/configurations.
+.</p>
+</li>
+<li><p class="first">as this module is still in development, feedback is more than encouraged,
+it is required.  Please send your MapCache questions to the
+<a class="reference external" href="http://www.mapserver.org/trunk/community/lists.html#mapserver-users">MapServer-users mailing list</a>.  You are also encouraged to contact
+Gateway Geomatics <a class="reference external" href="mailto:info&#64;gatewaygeomatics.com">directly</a> for custom builds and to help fund
+the development and maintenance of MS4W.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="h-certificates-for-https-with-wms-wfs-servers">
+<h2><a class="toc-backref" href="#table-of-contents">H. Certificates for HTTPS with WMS/WFS Servers</a></h2>
+<p>As of MapServer 5.4.1, MapServer can connect through HTTPS connections
+to WMS/WFS servers.  MS4W 3.0 includes the necessary configuration
+as follows:</p>
+<ol class="arabic">
+<li><p class="first">Certificate authority bundle is included in
+/ms4w/Apache/conf/ca-bundle/cacert.pem</p>
+<p>Source: <a class="reference external" href="http://curl.haxx.se/ca/cacert.pem">http://curl.haxx.se/ca/cacert.pem</a></p>
+</li>
+<li><p class="first">Apache's httpf.conf points to the ca-bundle:</p>
+<pre class="literal-block">
+SetEnv CURL_CA_BUNDLE &quot;/ms4w/Apache/conf/ca-bundle/cacert.pem&quot;
+</pre>
+</li>
+<li><p class="first">MS4W's setenv.bat points to the ca-bundle:</p>
+<pre class="literal-block">
+set CURL_CA_BUNDLE=\ms4w\Apache\conf\ca-bundle\cacert.pem
+</pre>
+</li>
+<li><p class="first">For more information on SSL certificates,
+see: <a class="reference external" href="http://curl.haxx.se/docs/sslcerts.html">http://curl.haxx.se/docs/sslcerts.html</a></p>
+</li>
+<li><p class="first">To setup MapServer as a client to access a remote WMS/WFS server
+through HTTPS see: <a class="reference external" href="http://trac.osgeo.org/mapserver/ticket/3070">http://trac.osgeo.org/mapserver/ticket/3070</a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="i-using-the-python-gdal-module">
+<h2><a class="toc-backref" href="#table-of-contents">I. Using the Python GDAL Module</a></h2>
+<p>Note:</p>
+<blockquote>
+<pre class="literal-block">
+Python 2.6 is required for the Python GDAL module in
+MS4W, and you must have C:/python26 in your PATH to use
+the utilities.
+</pre>
+</blockquote>
+<p>The Python GDAL module and its utilities are installed in
+<tt class="docutils literal">/ms4w/python/gdal/</tt>.  To run the utilities:</p>
+<ol class="arabic simple">
+<li>Open a Command Prompt window</li>
+<li>cd ms4w</li>
+<li>setenv.bat</li>
+<li>excute the python utility, such as:</li>
+</ol>
+<blockquote>
+<pre class="literal-block">
+gdal_merge.py
+</pre>
+</blockquote>
+<p>gdal_merge.py notes:</p>
+<ul class="simple">
+<li>-n (nodata_value) switch requires the NumPy
+module <a class="reference external" href="http://numpy.scipy.org/">http://numpy.scipy.org/</a></li>
+<li>raster_copy_with_nodata() also requires the NumPy module</li>
+</ul>
+</div>
+<div class="section" id="j-troubleshooting">
+<h2><a class="toc-backref" href="#table-of-contents">J. Troubleshooting</a></h2>
+<p><strong>Warning: dl(): Unable to load dynamic library
+'/ms4w/Apache/php/extensions/php_mapscript.dll'</strong></p>
+<ol class="arabic">
+<li><p class="first">Verify that the dll in question exists in the
+specified location (/ms4w/Apache/php/extensions/).  If
+this dll is not in that location, you might have to
+modify the application to point to a different version of
+the dll (e.g. you might have <em>php_mapscript.dll</em> in
+the extensions directory, and your application might be
+configured for <em>php_mapscript_48.dll</em> which is not in the
+extensions directory).</p>
+</li>
+<li><p class="first">This php_mapscript dll requires several other dlls, and
+the problem may be that one is missing on your system.
+In order to hopefully get more information on what dll
+is missing, go to a command prompt, and do the following:</p>
+<pre class="literal-block">
+cd ms4w\Apache\cgi-bin
+
+php C:/ms4w/Apache/htdocs/phpinfo_mapscript.php
+</pre>
+<p>A windows error window should open with a message like:</p>
+<pre class="literal-block">
+The dynamic link library ***** could not be found in
+the specified path...
+</pre>
+<p>Locate this missing dll and copy it either to
+/ms4w/Apache/cgi-bin/ or your system32 folder.</p>
+</li>
+<li><p class="first">If you are still unsure what dll is causing this <em>unable
+to load dynamic library</em> error, a useful utility to find
+what associated dlls are missing on your system is
+<a class="reference external" href="http://www.dependencywalker.com/">Dependency Walker</a>.  Download the utility, execute the
+exe, and open your php_mapscript dll.</p>
+</li>
+</ol>
+<p><strong>The dynamic link library MSVCP71.dll could not be found
+in the specified path...</strong></p>
+<p>This is a microsoft runtime library that is apparently not
+on all Windows systems by default.  Download the dll
+(possibly from <a class="reference external" href="http://www.dll-files.com/dllindex/dll-files.shtml?msvcp71">here</a>) and copy it to your System32
+directory.</p>
+<p><strong>Clicking on apache-install.bat flashes a DOS window and
+does not install the service</strong></p>
+<p>To see the exact error message, open a Command window, and
+execute the 'apache-install.bat' file from a DOS prompt.</p>
+<pre class="literal-block">
+cd ms4w
+
+apache-install.bat
+</pre>
+<p><strong>Only one usage of each socket address (protocol/network
+address/port) is normally permitted.  : make_sock: could not
+bind to address 0.0.0.0:80 no listening sockets available,
+shutting down</strong></p>
+<p>Apache with MS4W is configured to use port 80.  Your system
+might be already using this port (IIS could cause this for
+example).  If you want to change the port that Apache uses
+modify the following file:</p>
+<pre class="literal-block">
+/ms4w/Apache/conf/httpd.conf
+
+line 120: Listen 80
+</pre>
+<p><a class="reference external" href="http://technet.microsoft.com/en-us/sysinternals/bb897437.aspx">TCPView</a> is an example of shareware that lets you see
+how the ports on your machine are being used.</p>
+<p><strong>The procedure entry point xxxx could not be located in the
+dynamic link library xxx.dll</strong></p>
+<p>Make sure that MapServer (or the utility that you are trying
+to use) is actually using the 'xxx.dll' file that is part
+of the MS4W package.  You could be experiencing 'dll hell'
+(<a class="reference external" href="http://en.wikipedia.org/wiki/DLL_hell">http://en.wikipedia.org/wiki/DLL_hell</a>) where MS4W is
+actually finding an older dll on your system.  Try renaming
+the other dll(s) of the same name, keeping the one in MS4W
+as is, and retrying your application/command.</p>
+<p><strong>Other Problems...</strong></p>
+<ol class="arabic simple">
+<li>Search the <a class="reference external" href="http://lists.maptools.org/search.phtml?config=ms4w-users">mailing list archives</a> to see if someone has
+encountered/solved your same issue.</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li>If your issue has not been brought up on the mailing list
+and dealt with, submit a question to the
+<a class="reference external" href="http://lists.maptools.org/mailman/listinfo/ms4w-users">MS4W mailing list</a>.  Include the steps to reproduce
+your problem, and state your exact error message.  Also
+specify which version of MS4W you are using.</li>
+</ol>
+</div>
+<div class="section" id="k-modifying-ms4w-for-an-installation-not-at-the-drive-root">
+<h2><a class="toc-backref" href="#table-of-contents">K. Modifying MS4W for an Installation not at the Drive Root</a></h2>
+<p>Do the following steps in a text editor:</p>
+<ol class="arabic simple">
+<li>Open /ms4w/Apache/conf/httpd.conf and search for &quot;/ms4w/&quot; and
+replace with your new path from your drive root (such as
+&quot;/Temp/ms4w/&quot;)</li>
+<li>Open /ms4w/Apache/cgi-bin/php.ini and search for &quot;/ms4w/&quot;
+and replace with your new path from your drive root (such as
+&quot;/Temp/ms4w/&quot;)</li>
+<li>Open all files in /ms4w/httpd.d and search for &quot;/ms4w/&quot;
+and replace with your new path from your drive root (such as
+&quot;/Temp/ms4w/&quot;)</li>
+<li>Open /ms4w/setenv.bat and search for &quot;/ms4w/&quot; and replace
+with your new path from your drive root (such as &quot;/Temp/ms4w/&quot;)</li>
+<li>Configure your add-on packages.  Using Chameleon as an example:
+Open /ms4w/apps/chameleon/config/chameleon.xml and search for
+&quot;/ms4w/&quot; and replace with your new path from your drive root
+(such as &quot;/Temp/ms4w/&quot;)</li>
+</ol>
+<p>Recommendation: avoid installing MS4W in a path that contains spaces</p>
+</div>
+<div class="section" id="l-installing-the-ms4w-mapserver-binaries-in-other-environments">
+<h2><a class="toc-backref" href="#table-of-contents">L. Installing the MS4W MapServer Binaries in Other Environments</a></h2>
+<p>The following instructions will help non-MS4W users who want
+to only use the MapServer binaries included in MS4W:</p>
+<ol class="arabic simple">
+<li>Download and extract the MS4W base package locally from <a class="reference external" href="http://www.maptools.org/ms4w/index.phtml?page=downloads.html">MapTools</a>.</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li>Do not install the Apache service (apache-install.bat)</li>
+<li>Copy the .dll files from the <cite>/ms4w/apache/cgi-bin/</cite> directory
+into your desired cgi-bin directory:</li>
+<li>For PHP/Mapscript, goto <cite>/ms4w/Apache/php/ext/</cite> and copy
+the <cite>php_mapscript.dll</cite> file into your own PHP
+extensions directory.  CSharp, Java, and Python mapscript
+files can be found in <cite>/ms4w/Apache/cgi-bin/mapscript/</cite></li>
+<li>For the commandline utilities that come with MS4W (mapserv,
+gdal, etc.) copy all of the <cite>.exe</cite> files from <cite>/ms4w/tools/</cite>
+to a desired location, but be aware that these utilities
+use dlls that were installed in the cgi-bin directory.
+Therefore you must add your cgi-bin directory into your
+Windows PATH environment variable before running the
+utilities.</li>
+<li>Microsoft IIS users should refer to the <a class="reference external" href="http://www.mapserver.org/installation/iis.html">IIS Howto</a> for MapServer.</li>
+</ol>
+</div>
+<div class="section" id="m-using-custom-epsg-projections">
+<h2><a class="toc-backref" href="#table-of-contents">M. Using Custom EPSG Projections</a></h2>
+<p>Custom EPSG projections can be added to the bottom of your epsg file
+at <cite>/ms4w/proj/nad/epsg/</cite>.</p>
+<p>As of MS4W 3.0-beta11, previously included custom projections for
+Canada have been removed.  Here is some of the history:</p>
+<ul class="simple">
+<li>Gateway Geomatics officially applied to have the custom Canadian
+projection EPSG:42304 (common in Ontario and in the Atlas of
+Canada) included in the EPSG geodetic registry in 2009</li>
+<li>the projection was accepted as EPSG:3978 in the EPSG geodetic
+registry on 2009-06-02</li>
+<li>this new EPSG code is included in PROJ4 4.7.0 release (2009-09)</li>
+</ul>
+<p>For reference, here are the old custom Canadian EPSG codes:</p>
+<pre class="literal-block">
+##
+## Custom projection codes for Canada
+##
+## WGS84 / LCC Canada
+&lt;42101&gt; +proj=lcc +ellps=WGS84 +lat_0=0 +lon_0=-95 +lat_1=49
+        +lat_2=77 +x_0=0 +y_0=-8000000.0 +datum=WGS84
+        +units=m no_defs &lt;&gt;
+## NAD83 / BC Albers
+&lt;42102&gt; +proj=aea +ellps=GRS80 +lat_0=45 +lon_0=-126.0
+        +lat_1=50.0
+        +lat_2=58.5 +x_0=1000000.0 +y_0=0 +datum=NAD83
+        +units=m no_defs &lt;&gt;
+#
+## NAD83 LCC for Canada
+&lt;42304&gt; +proj=lcc +ellps=GRS80 +lat_0=49 +lon_0=-95
+        +lat_1=49 +lat_2=77
+        +datum=NAD83 +units=m no_defs &lt;&gt;
+##
+</pre>
+</div>
+</div>
+<div class="section" id="password-protection-configuration-for-applications">
+<h1><a class="toc-backref" href="#table-of-contents">Password Protection Configuration for Applications</a></h1>
+<p>The following section explains how to add password
+authentication to your MS4W application.  However there are
+many other possible settings in Apache for this, so please
+consult the Apache HTTP Server documentation.</p>
+<p>Here are the minimal steps for password protection:</p>
+<ol class="arabic">
+<li><p class="first">Modify your application's httpd_xxx.conf file, so that
+&quot;AllowOverride None&quot; is replaced with &quot;AllowOverride
+AuthConfig&quot;, such as:</p>
+<pre class="literal-block">
+Alias /gmap/ &quot;/ms4w/apps/gmap/htdocs/&quot;
+
+&lt;Directory &quot;/ms4w/apps/gmap/htdocs/&quot;&gt;
+  AllowOverride AuthConfig
+  Options Indexes FollowSymLinks Multiviews
+  Order allow,deny
+  Allow from all
+&lt;/Directory&gt;
+</pre>
+</li>
+<li><p class="first">Create a password file.</p>
+<ul>
+<li><p class="first">open a DOS command window, and go to Apache's bin
+directory</p>
+</li>
+<li><p class="first">enter the following (replace &quot;jeff&quot; with the username
+you want to create, press ENTER and you will be
+prompted for a password to create):</p>
+<pre class="literal-block">
+C:/ms4w/Apache/bin&gt; htpasswd -c htpasswd.txt jeff
+</pre>
+</li>
+</ul>
+</li>
+<li><p class="first">Create the htaccess file.</p>
+<ul>
+<li><p class="first">create a file in your application directory
+(/ms4w/apps/gmap/htdocs/ in this example) named
+'.htaccess'</p>
+</li>
+<li><p class="first">the file should contain (you can modify it however you
+wish though):</p>
+<pre class="literal-block">
+AuthType Basic
+AuthUserFile C:/ms4w/Apache/bin/htpasswd.txt
+AuthName &quot;Password Required&quot;
+
+require valid-user
+</pre>
+</li>
+</ul>
+</li>
+<li><p class="first">Restart Apache</p>
+<ul class="simple">
+<li>run /ms4w/apache-restart.bat</li>
+</ul>
+</li>
+<li><p class="first">Access your application in a web browser.</p>
+</li>
+</ol>
+<p><em>Troubleshooting:</em></p>
+<ul>
+<li><p class="first">some Windows versions may have difficulty with the
+'.htaccess' filename, so you might try naming it something
+else, but you would have to modify Apache's httpd.conf
+file (/ms4w/Apache/conf/httpd.conf) and add your filename,
+such as:</p>
+<pre class="literal-block">
+AccessFileName .htaccess yourfilename
+</pre>
+<p>'htaccess.acl' is recommended, such as:</p>
+<pre class="literal-block">
+AccessFileName .htaccess htaccess.acl
+</pre>
+</li>
+<li><p class="first">a good reference is
+<a class="reference external" href="http://sniptools.com/tutorials/windows-apache-and-htaccess-authentication">http://sniptools.com/tutorials/windows-apache-and-htaccess-authentication</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="ms4w-applications">
+<h1><a class="toc-backref" href="#table-of-contents">MS4W Applications</a></h1>
+<p>The following applications come with a pre-configured
+install package for MS4W. Go to
+<a class="reference external" href="http://www.maptools.org/ms4w/index.phtml?page=downloads.html">http://www.maptools.org/ms4w/index.phtml?page=downloads.html</a>
+to find the desired package, and extract the packages to the
+MS4W root (e.g. if you installed in C:then extract at C:,
+and if you installed the base in C:Program Files then
+extract the packages to C:Program Files).</p>
+<blockquote>
+<ol class="arabic simple">
+<li>ArcIMS Emulator</li>
+<li>Chameleon</li>
+<li>dBox MapServer</li>
+<li>FIST - Flexible Internet Spatial Template</li>
+<li>GeoMOOSE</li>
+<li>ka-Map</li>
+<li>MapBender</li>
+<li>MapServer Itasca Demo Application</li>
+<li>OGC Workshop</li>
+<li>OpenLayers</li>
+<li>GMap Sample PHP/MapScript Application</li>
+<li>phpPgAdmin</li>
+<li>p.mapper</li>
+</ol>
+</blockquote>
+</div>
+<div class="section" id="additional-support">
+<h1><a class="toc-backref" href="#table-of-contents">Additional Support</a></h1>
+<p>General questions and comments should be sent to the MS4W
+mailing list, which you can join at:
+<a class="reference external" href="http://lists.maptools.org/mailman/listinfo/ms4w-users">http://lists.maptools.org/mailman/listinfo/ms4w-users</a></p>
+<p>Requests for changes and enhancements to MS4W should be
+filed in the MS4W <a class="reference external" href="http://www.maptools.org/bugzilla/query.cgi">tracker</a>.</p>
+<p>Custom support is also available from <a class="reference external" href="http://www.gatewaygeomatics.com/">Gateway Geomatics</a>.</p>
+</div>
+<div class="section" id="about-this-document">
+<h1><a class="toc-backref" href="#table-of-contents">About this Document</a></h1>
+<div class="section" id="copyright-licensing-information">
+<h2><a class="toc-backref" href="#table-of-contents">Copyright/Licensing Information</a></h2>
+<p>In general MS4W is licensed under an MIT/X style license with the
+following terms:</p>
+<p>Copyright (c) 2003-2013 Gateway Geomatics</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files
+(the &quot;Software&quot;),to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</div>
+<div class="section" id="component-licensing">
+<h2><a class="toc-backref" href="#table-of-contents">Component Licensing</a></h2>
+<p>MS4W contains several component packages that are provided under
+their own licensing terms.</p>
+<div class="section" id="mapserver">
+<h3><a class="toc-backref" href="#table-of-contents">MapServer</a></h3>
+<p>Copyright (c) 1996-2013 Regents of the University of Minnesota</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files
+(the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be
+included in all copies of this Software or works derived from
+this Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</div>
+<div class="section" id="gdal">
+<h3><a class="toc-backref" href="#table-of-contents">GDAL</a></h3>
+<p>Refer to the GDAL license found at /ms4w/gdaldata/LICENSE.TXT</p>
+</div>
+<div class="section" id="mrsid">
+<h3><a class="toc-backref" href="#table-of-contents">MrSID</a></h3>
+<p>Portions of this computer program are copyright (c) 1995-2013
+LizardTech, Inc.
+All rights reserved. MrSID is protected by U.S. Patent No. 5,710,835.
+Foreign Patents Pending.</p>
+</div>
+<div class="section" id="freetype">
+<h3><a class="toc-backref" href="#table-of-contents">FreeType</a></h3>
+<p>Portions of this software are copyright © 2013 The FreeType Project
+(www.freetype.org).  All rights reserved.</p>
+</div>
+<div class="section" id="apache">
+<h3><a class="toc-backref" href="#table-of-contents">Apache</a></h3>
+<p>Refer to the Apache license found at /ms4w/Apache/LICENSE-APACHE.txt</p>
+</div>
+<div class="section" id="php">
+<h3><a class="toc-backref" href="#table-of-contents">PHP</a></h3>
+<p>Refer to the PHP license found at /ms4w/Apache/php/license.txt</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

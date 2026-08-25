@@ -1,0 +1,77 @@
+<?php
+
+$host = "localhost";
+$port = 5093;
+$user = "postgres";
+$password = "password";
+$dbname = "webgis";
+
+$db = pg_connect("host=$host port=$port user=$user password=$password dbname=$dbname");
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Validate and sanitize user input (add more validation as needed)
+    $country = pg_escape_string($_POST['country']);
+    $province = pg_escape_string($_POST['province']);
+    $description = pg_escape_string($_POST['description']);
+    $latitude = floatval($_POST['latitude']);
+    $longitude = floatval($_POST['longitude']);
+
+    // Perform additional validation if needed (e.g., check numeric values, etc.)
+
+    $query = "INSERT INTO damproject (country, province, description, latitude, longitude) 
+              VALUES ('$country', '$province', '$description', $latitude, $longitude)";
+
+    $result = pg_query($db, $query);
+
+    if ($result) {
+        echo json_encode(['status' => 'success']);
+    } else {
+        echo json_encode(['status' => 'error', 'message' => 'Error inserting data: ' . pg_last_error()]);
+    }
+} else {
+    echo json_encode(['status' => 'error', 'message' => 'Invalid request method']);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // Fetch data from damproject table
+    $query = "SELECT id, country, province, description, latitude, longitude FROM damproject";
+    $result = pg_query($db, $query);
+
+    if (!$result) {
+        echo json_encode(['status' => 'error', 'message' => 'Error fetching data: ' . pg_last_error()]);
+        exit();
+    }
+
+    // Convert result to GeoJSON format
+    $geojson = [
+        'type' => 'FeatureCollection',
+        'features' => [],
+    ];
+
+    while ($row = pg_fetch_assoc($result)) {
+        $feature = [
+            'type' => 'Feature',
+            'properties' => [
+                'id' => $row['id'],
+                'country' => $row['country'],
+                'province' => $row['province'],
+                'description' => $row['description'],
+            ],
+            'geometry' => [
+                'type' => 'Point',
+                'coordinates' => [$row['longitude'], $row['latitude']],
+            ],
+        ];
+
+        $geojson['features'][] = $feature;
+    }
+
+    header('Content-Type: application/json');
+    echo json_encode($geojson);
+} else {
+    echo json_encode(['status' => 'error', 'message' => 'Invalid request method']);
+}
+
+pg_close($db);
+
+?>

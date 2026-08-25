@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapcache>
+	
+   <!--Filebasiert-->
+   <cache name="disk" type="disk" >
+       <base>D:/MAPCACHE</base>
+    </cache>
+
+   
+   <!--Gridset -->
+   <!--Hinweis: 
+   resolution kann über Funktion getreselutions() in Firebug Konsole im NETGIS Map Client ermittelt werden
+   extent großzügig angeben, da sonst Fehlerkacheln am Rand
+   -->
+   <grid name="RLP_UTM32">
+	   <metadata><title>RLP UTM Zone 32</title></metadata>
+	   <extent>293300,5424000,464300,5647000</extent> 
+	   <srs>EPSG:25832</srs>
+	   <units>m</units>
+	   <size>256 256</size>
+	   <resolutions>705.5551745557614 529.166380916821 352.7775872778807 176.38879363894034 88.19439681947017 52.916638091682096 35.27775872778806 17.63887936389403 8.819439681947015 5.291663809168209 3.527775872778806 2.8222206982230453 1.763887936389403 1.058332761833642 0.35277758727788067 0.17638879363894033</resolutions>
+	</grid>
+
+   
+   <!--Source-->
+   <source name="tk_farbe" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>tk_farbe</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://map1.naturschutz.rlp.de/kartendienste_naturschutz/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="tk_farbe">
+      <source>tk_farbe</source>
+      <cache>disk</cache>
+      <grid>RLP_UTM32</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+	
+   <!--Source-->
+   <source name="tk_sw" type="wms">   
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>tk_sw</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://map1.naturschutz.rlp.de/kartendienste_naturschutz/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="tk_sw">
+      <source>tk_sw</source>
+      <cache>disk</cache>
+      <grid>RLP_UTM32</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+   
+   <!--Standart Format-->
+   <default_format>JPEG</default_format>
+
+   <!--Service Typen-->
+   <service type="wms" enabled="true">
+      <full_wms>assemble</full_wms>
+      <!--<resample_mode>bilinear</resample_mode>-->
+      <format>JPEG</format>
+      <maxsize>4096</maxsize>
+   </service>   
+   <service type="wmts" enabled="true"/>
+   <service type="tms" enabled="true"/>
+   <!--
+   <service type="kml" enabled="true"/>
+   <service type="gmaps" enabled="true"/>
+   <service type="ve" enabled="true"/>
+   <service type="demo" enabled="true"/>
+   -->
+
+   <!--Error Logging-->
+   <errors>report</errors>
+   <lock_dir>D:/MAPCACHE/log</lock_dir>
+
+</mapcache>

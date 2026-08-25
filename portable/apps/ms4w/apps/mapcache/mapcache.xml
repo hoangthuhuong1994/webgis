@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapcache>
+	
+   <!--Filebasiert-->
+   <cache name="disk" type="disk" >
+       <!--###<base>D:/MAPCACHE</base>-->
+	   <base>/portable/apps/ms4w/MAPCACHE</base>
+    </cache>
+
+   
+   <!--Gridset -->
+   <!--Hinweis: 
+   resolution kann über Funktion getreselutions() in Firebug Konsole im NETGIS Map Client ermittelt werden
+   extent großzügig angeben, da sonst Fehlerkacheln am Rand
+   
+   alt: 705.5551745557614 529.166380916821 352.7775872778807 176.38879363894034 88.19439681947017 52.916638091682096 35.27775872778806 17.63887936389403 8.819439681947015 5.291663809168209 3.527775872778806 2.8222206982230453 1.763887936389403 1.058332761833642 0.35277758727788067 0.17638879363894033
+   
+   -->
+   <grid name="RLP_UTM32">
+	   <metadata><title>RLP UTM Zone 32</title></metadata>
+	   <extent>293300,5424000,464300,5647000</extent> 
+	   <!--<extent>289000,5420000,467800,5647800</extent> -->	   
+	   <srs>EPSG:25832</srs>
+	   <units>m</units>
+	   <size>256 256</size>
+	   <resolutions>705.5551745557614 634.9996571001852 564.444139644609 493.88862218903284 423.33310473345676 352.7775872778807 317.4998285500926 282.2220698223045 246.94431109451642 211.66655236672838 176.38879363894034 141.11103491115225 105.83327618336419 70.55551745557612 35.27775872778806 31.749982855009257 24.694431109451642 17.63887936389403 10.583327618336417 8.819439681947015 7.055551745557612 5.291663809168209 3.527775872778806 2.8222206982230453 1.763887936389403 1.058332761833642 0.35277758727788067 0.17638879363894033</resolutions>
+	</grid>
+
+   
+   <!--Source
+   <source name="tk_farbe1" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/png</FORMAT>
+            <LAYERS>tk_farbe</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://map1.naturschutz.rlp.de/kartendienste_naturschutz/mod_mapserver/map.php?</url>
+      </http>
+	  http://81.169.134.27/cgi-bin/mapserv.exe?map=D:/Web/data_service_basis/wms/tk_rlp_gesamt.map
+	  http://81.169.134.27/service_basis/mod_wms/wms_getmap.php?mapfile=tk_rlp_gesamt
+   </source>-->
+   
+   <!--Source-->
+   <source name="tk_farbe" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/png</FORMAT>
+            <LAYERS>grenzen_land_ov,tk_farbe5,tk_farbe25,tk_farbe50,tk_farbe100,tk_farbe500_1,tk_farbe500_2,rlpmaske,grenzen_land</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://81.169.134.27/service_basis/mod_wms/wms_getmap.php?mapfile=tk_rlp_gesamt</url>
+      </http>
+   </source>
+
+  
+   
+   <!--Tileset-->
+   <tileset name="tk_farbe">
+      <source>tk_farbe</source>
+      <cache>disk</cache>
+      <grid>RLP_UTM32</grid>
+      <format>PNG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+	
+   <!--Source
+   <source name="tk_sw1" type="wms">   
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>tk_sw</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://map1.naturschutz.rlp.de/kartendienste_naturschutz/mod_mapserver/map.php?</url>
+      </http>
+   </source>-->
+   
+      <!--Source-->
+   <source name="tk_sw" type="wms">   
+      <getmap>
+         <params>
+            <FORMAT>image/png</FORMAT>
+            <LAYERS>grenzen_land_ov,tk_grau5,tk_grau25,tk_grau50,tk_grau100,tk_grau500_1,tk_grau500_2,rlpmaske,grenzen_land</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://81.169.134.27/service_basis/mod_wms/wms_getmap.php?mapfile=tk_rlp_gesamt</url>
+      </http>
+   </source>
+   
+   
+   
+   <!--Tileset-->
+   <tileset name="tk_sw">
+      <source>tk_sw</source>
+      <cache>disk</cache>
+      <grid>RLP_UTM32</grid>
+      <format>PNG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+   
+   <!--Standart Format-->
+   <default_format>PNG</default_format>
+
+   <!--Service Typen-->
+   <service type="wms" enabled="true">
+      <full_wms>assemble</full_wms>
+      <!--<resample_mode>bilinear</resample_mode>-->
+      <format>PNG</format>
+      <maxsize>4096</maxsize>
+   </service>   
+   <service type="wmts" enabled="true"/>
+   <service type="tms" enabled="true"/>
+   <!--
+   <service type="kml" enabled="true"/>
+   <service type="gmaps" enabled="true"/>
+   <service type="ve" enabled="true"/>
+   <service type="demo" enabled="true"/>
+   -->
+
+   <!--Error Logging-->
+   <errors>report</errors>
+   <!--###<lock_dir>D:/MAPCACHE/log</lock_dir>-->
+   <lock_dir>/portable/apps/ms4w/MAPCACHE/log</lock_dir>
+
+</mapcache>

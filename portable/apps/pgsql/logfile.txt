@@ -1,0 +1,1728 @@
+postgres kann nicht auf die Serverkonfigurationsdatei »E:/portable/apps/pgsql/data/postgresql.conf« zugreifen: No such file or directory
+postgres kann nicht auf die Serverkonfigurationsdatei »E:/portable/apps/pgsql/data/postgresql.conf« zugreifen: No such file or directory
+postgres kann nicht auf die Serverkonfigurationsdatei »E:/portable/apps/pgsql/data/postgresql.conf« zugreifen: No such file or directory
+postgres kann nicht auf die Serverkonfigurationsdatei »E:/portable/apps/pgsql/data/postgresql.conf« zugreifen: No such file or directory
+postgres kann nicht auf die Serverkonfigurationsdatei »E:/portable/apps/pgsql/data/postgresql.conf« zugreifen: No such file or directory
+postgres kann nicht auf die Serverkonfigurationsdatei »E:/portable/apps/pgsql/data/postgresql.conf« zugreifen: No such file or directory
+LOG:  Datenbanksystem wurde am 2017-05-02 11:05:09 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+FATAL:  Rolle »postgres« existiert nicht
+FATAL:  Rolle »postgres« existiert nicht
+FATAL:  Rolle »postgres« existiert nicht
+LOG:  Statistiksammelprozess (PID 5252) wurde durch Ausnahme 0xC000013A beendet
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+^CLOG:  Datenbanksystem wurde am 2017-05-02 11:16:58 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  Statistiksammelprozess (PID 5576) wurde durch Ausnahme 0xC000013A beendet
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  Autovacuum-Launcher-Prozess (PID 6940) wurde durch Ausnahme 0xC000013A beendet
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  aktive Serverprozesse werden abgebrochen
+^CLOG:  Datenbanksystem wurde am 2017-05-02 11:20:22 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+Interrupt requested
+LOG:  Serverprozess (PID 3500) wurde durch Ausnahme 0xC000013A beendet
+DETAIL:  Der fehlgeschlagene Prozess führte aus: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='T'
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  aktive Serverprozesse werden abgebrochen
+WARNUNG:  breche Verbindung ab wegen Absturz eines anderen Serverprozesses
+DETAIL:  Der Postmaster hat diesen Serverprozess angewiesen, die aktuelle Transaktion zurückzurollen und die Sitzung zu beenden, weil ein anderer Serverprozess abnormal beendet wurde und möglicherweise das Shared Memory verfälscht hat.
+TIPP:  In einem Moment sollten Sie wieder mit der Datenbank verbinden und Ihren Befehl wiederholen können.
+LOG:  Statistiksammelprozess (PID 9860) wurde durch Ausnahme 0xC000013A beendet
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+^CLOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2017-05-02 11:21:09 CEST
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Redo beginnt bei 0/17731A0
+LOG:  Datensatz mit Länge Null bei 0/1DC5908
+LOG:  Redo fertig bei 0/1DC58D8
+LOG:  letzte vollständige Transaktion war bei Logzeit 2017-05-02 11:21:59.773+02
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-05-02 11:28:49 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-05-02 13:03:33 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-05-02 13:04:38 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-05-02 13:10:34 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:34:11 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:38:21 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:40:28 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:41:35 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:42:36 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:45:29 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:45:45 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:48:01 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:48:53 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:49:39 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:51:18 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2017-07-24 08:51:43 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-09-05 11:57:57 CEST
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Datensatz mit Länge Null bei 0/1DDA770
+LOG:  Redo nicht nötig
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-09-05 12:02:25 CEST
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Datensatz mit Länge Null bei 0/1DDA7D8
+LOG:  Redo nicht nötig
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-05 16:06:47 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-09-06 10:10:51 CEST
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Datensatz mit Länge Null bei 0/1DDA8A8
+LOG:  Redo nicht nötig
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-09-06 13:33:12 CEST
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Datensatz mit Länge Null bei 0/1DDA910
+LOG:  Redo nicht nötig
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-09-07 10:15:08 CEST
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Datensatz mit Länge Null bei 0/1DDA978
+LOG:  Redo nicht nötig
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-07 15:52:29 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-08 13:16:42 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-10 10:15:39 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-11 16:12:45 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-12 16:16:35 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+FEHLER:  Syntaxfehler bei Â»;Â« bei Zeichen 47
+ANWEISUNG:  CREATE TABLE message
+	(
+	
+		id SERIAL PRIMARY KEY;
+		name TEXT,
+		content TEXT,
+		date TIMESTAMP DEFAUT now()
+		
+	
+	);
+	
+FEHLER:  Syntaxfehler bei Â»DEFAUTÂ« bei Zeichen 92
+ANWEISUNG:  CREATE TABLE message
+	(
+	
+		id SERIAL PRIMARY KEY,
+		name TEXT,
+		content TEXT,
+		date TIMESTAMP DEFAUT now()
+		
+	
+	)
+FEHLER:  Syntaxfehler bei Â»DEFAUTÂ« bei Zeichen 92
+ANWEISUNG:  CREATE TABLE message
+	(
+	
+		id SERIAL PRIMARY KEY,
+		name TEXT,
+		content TEXT,
+		date TIMESTAMP DEFAUT now()
+		
+	
+	);
+	
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+FEHLER:  Syntaxfehler bei Â»;Â« bei Zeichen 46
+ANWEISUNG:  CREATE TABLE markers
+	(
+		id SERIAL PRIMARY KEY;
+		date TIMESTAMP DEFAULT now(),
+		name TEXT,
+		geom GEOMETRY
+		-- GEOMETRY is a special PostGIS data type
+		-- for efficient storage and calculations
+	);
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+FEHLER:  Relation Â»markersÂ« existiert bereits
+ANWEISUNG:  CREATE TABLE markers
+	(
+		id SERIAL PRIMARY KEY,
+		date TIMESTAMP DEFAULT now(),
+		name TEXT,
+		geom GEOMETRY
+		-- GEOMETRY is a special PostGIS data type
+		-- for efficient storage and calculations
+	);
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+FEHLER:  Relation Â»markersÂ« existiert bereits
+ANWEISUNG:  CREATE TABLE markers
+	(
+		id SERIAL PRIMARY KEY,
+		date TIMESTAMP DEFAULT now(),
+		name TEXT,
+		geom GEOMETRY
+		-- GEOMETRY is a special PostGIS data type
+		-- for efficient storage and calculations
+	);
+FEHLER:  Relation Â»markersÂ« existiert bereits
+ANWEISUNG:  CREATE TABLE markers
+	(
+		id SERIAL PRIMARY KEY,
+		date TIMESTAMP DEFAULT now(),
+		name TEXT,
+		geom GEOMETRY
+		
+		
+	)
+FEHLER:  Relation Â»markersÂ« existiert bereits
+ANWEISUNG:  CREATE TABLE markers
+	(
+		id SERIAL PRIMARY KEY,
+		date TIMESTAMP DEFAULT now(),
+		name TEXT,
+		geom GEOMETRY
+		-- GEOMETRY is a special PostGIS data type
+		-- for efficient storage and calculations
+	);
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»dataÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT  name, data, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+FEHLER:  Spalte Â»geometryÂ« existiert nicht bei Zeichen 26
+ANWEISUNG:  SELECT  name, date, ST_X(geometry) AS lon, ST_Y( geom ) AS lat FROM markers;
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-13 16:41:21 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-14 13:23:54 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-24 00:56:05 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-09-28 12:53:15 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-10-23 15:33:46 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-10-24 15:25:04 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-10-30 14:14:20 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-05 23:20:18 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-12 16:53:00 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-15 23:46:14 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-17 08:24:00 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-24 15:19:50 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-24 15:42:43 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+FEHLER:  Relation Â»countriesÂ« existiert bereits
+ANWEISUNG:  CREATE TABLE Countries (
+	    CountryID SERIAL PRIMARY KEY,
+	    CountryName VARCHAR(255) NOT NULL
+	    -- Add other columns as needed
+	);
+FEHLER:  Datenbank Â»countryÂ« existiert bereits
+ANWEISUNG:  CREATE DATABASE country
+	  WITH ENCODING='UTF8'
+	       CONNECTION LIMIT=-1;
+	
+FEHLER:  Syntaxfehler bei Â»AUTO_INCREMENTÂ« bei Zeichen 56
+ANWEISUNG:  CREATE TABLE Countries (
+	    CountryID INT PRIMARY KEY AUTO_INCREMENT,
+	    CountryName VARCHAR(255) NOT NULL,
+	    -- Add other relevant columns for country information
+	);
+	
+FEHLER:  Syntaxfehler bei Â»)Â« bei Zeichen 154
+ANWEISUNG:  CREATE TABLE Countries (
+	    CountryID INT PRIMARY KEY,
+	    CountryName VARCHAR(255) NOT NULL,
+	    -- Add other relevant columns for country information
+	);
+	
+FEHLER:  Syntaxfehler bei Â»)Â« bei Zeichen 154
+ANWEISUNG:  CREATE TABLE Countries (
+	    CountryID INT PRIMARY KEY,
+	    CountryName VARCHAR(255) NOT NULL,
+	    -- Add other relevant columns for country information
+	)
+FEHLER:  Syntaxfehler bei Â»)Â« bei Zeichen 96
+ANWEISUNG:  CREATE TABLE Countries (
+	    CountryID INT PRIMARY KEY,
+	    CountryName VARCHAR(255) NOT NULL,
+	)
+FEHLER:  Syntaxfehler bei Â»CountryIDÂ« bei Zeichen 29
+ANWEISUNG:  CREATE TABLE Countries 
+	    CountryID INT PRIMARY KEY,
+	    CountryName VARCHAR(255) NOT NULL,
+FEHLER:  Syntaxfehler bei Â»)Â« bei Zeichen 96
+ANWEISUNG:  CREATE TABLE Countries (
+	    CountryID INT PRIMARY KEY,
+	    CountryName VARCHAR(255) NOT NULL,
+	)
+	
+FEHLER:  auf Datenbank Â»PowerplantÂ« wird von anderen Benutzern zugegriffen
+DETAIL:  1 andere Sitzung verwendet die Datenbank.
+ANWEISUNG:  DROP DATABASE "Powerplant";
+FEHLER:  auf Datenbank Â»PowerplantÂ« wird von anderen Benutzern zugegriffen
+DETAIL:  1 andere Sitzung verwendet die Datenbank.
+ANWEISUNG:  DROP DATABASE "Powerplant";
+FEHLER:  Syntaxfehler bei Â»AUTO_INCREMENTÂ« bei Zeichen 56
+ANWEISUNG:  CREATE TABLE PowerPlants (
+	    PlantID INT PRIMARY KEY AUTO_INCREMENT,
+	    PlantName VARCHAR(255) NOT NULL,
+	    CountryID INT,
+	    PowerSourceType VARCHAR(50),
+	    CONSTRAINT FK_PowerPlants_Countries FOREIGN KEY (CountryID) REFERENCES Countries(CountryID),
+	    -- Add other relevant columns for power plant information
+	);
+	
+FEHLER:  Syntaxfehler bei Â»)Â« bei Zeichen 313
+ANWEISUNG:  CREATE TABLE PowerPlants (
+	    PlantID INT PRIMARY KEY,
+	    PlantName VARCHAR(255) NOT NULL,
+	    CountryID INT,
+	    PowerSourceType VARCHAR(50),
+	    GeometryType VARCHAR(50) NOT NULL,
+	    Coordinates JSON NOT NULL,
+	    CONSTRAINT FK_PowerPlants_Countries FOREIGN KEY (CountryID) REFERENCES Countries(CountryID),
+	);
+FEHLER:  INSERT hat mehr Zielspalten als AusdrÃ¼cke bei Zeichen 74
+ANWEISUNG:  INSERT INTO PowerPlants (PlantID, PlantName, CountryID, PowerSourceType, Coordinates)
+	VALUES (
+	  'NhÃ  mÃ¡y Äiá»‡n máº·t trá»i ChÃ¢u Äá»©c', -- PlantName from JSON
+	  1,                                  -- CountryID (set to 1 for now)
+	  'solar',                            -- PowerSourceType from JSON
+	  '[[[107.1801522, 10.5843388], [107.1801522, 10.5805764], [107.1801925, 10.5804735], [107.183336, 10.5805289], [107.1826842, 10.5821689], [107.1818501, 10.5843256], [107.1801522, 10.5843388]], [[107.1801831, 10.5802257], [107.1801718, 10.5801541], [107.1801757, 10.5797138], [107.1801884, 10.579055], [107.1802032, 10.5789918], [107.1802287, 10.5789193], [107.1811031, 10.5779912], [107.1854697, 10.5732241], [107.1855944, 10.5732228], [107.1908998, 10.5779648], [107.1910796, 10.5780821], [107.1913397, 10.5781243], [107.1918413, 10.5781164], [107.1918064, 10.5790656], [107.190637, 10.5790339], [107.1893978, 10.5790603], [107.1879038, 10.5790392], [107.1878475, 10.5790867], [107.1877992, 10.5793583], [107.1878341, 10.5802521], [107.1864045, 10.5802521], [107.1801831, 10.5802257]]]' -- Coordinates from JSON
+	);
+FEHLER:  INSERT hat mehr Zielspalten als AusdrÃ¼cke bei Zeichen 74
+ANWEISUNG:  INSERT INTO PowerPlants (PlantID, PlantName, CountryID, PowerSourceType, Coordinates)
+	VALUES (
+	  'NhÃ  mÃ¡y Äiá»‡n máº·t trá»i ChÃ¢u Äá»©c', -- PlantName from JSON
+	  1,                                  -- CountryID (set to 1 for now)
+	  'solar',                            -- PowerSourceType from JSON
+	  '[[[107.1801522, 10.5843388], [107.1801522, 10.5805764], [107.1801925, 10.5804735], [107.183336, 10.5805289], [107.1826842, 10.5821689], [107.1818501, 10.5843256], [107.1801522, 10.5843388]], [[107.1801831, 10.5802257], [107.1801718, 10.5801541], [107.1801757, 10.5797138], [107.1801884, 10.579055], [107.1802032, 10.5789918], [107.1802287, 10.5789193], [107.1811031, 10.5779912], [107.1854697, 10.5732241], [107.1855944, 10.5732228], [107.1908998, 10.5779648], [107.1910796, 10.5780821], [107.1913397, 10.5781243], [107.1918413, 10.5781164], [107.1918064, 10.5790656], [107.190637, 10.5790339], [107.1893978, 10.5790603], [107.1879038, 10.5790392], [107.1878475, 10.5790867], [107.1877992, 10.5793583], [107.1878341, 10.5802521], [107.1864045, 10.5802521], [107.1801831, 10.5802257]]]' -- Coordinates from JSON
+	);
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-11-30 21:15:36 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-01 13:37:50 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+FEHLER:  INSERT hat mehr Zielspalten als AusdrÃ¼cke bei Zeichen 113
+ANWEISUNG:  INSERT INTO powerplants(
+	            plantid, plantname, countryid, powersourcetype, geometrytype, 
+	            coordinates)
+	VALUES (
+	    'relation/11380488',
+	    'NhÃ  mÃ¡y Äiá»‡n máº·t trá»i ChÃ¢u Äá»©c',
+	    'solar',
+	    'multipolygon',
+	    '{
+	        "coordinates": [
+	            [
+	                [
+	                    [107.1801522, 10.5843388],
+	                    [107.1801522, 10.5805764],
+	                    [107.1801925, 10.5804735],
+	                    [107.183336, 10.5805289],
+	                    [107.1826842, 10.5821689],
+	                    [107.1818501, 10.5843256],
+	                    [107.1801522, 10.5843388]
+	                ]
+	            ],
+	            [
+	                [
+	                    [107.1801831, 10.5802257],
+	                    [107.1801718, 10.5801541],
+	                    [107.1801757, 10.5797138],
+	                    [107.1801884, 10.579055],
+	                    [107.1802032, 10.5789918],
+	                    [107.1802287, 10.5789193],
+	                    [107.1811031, 10.5779912],
+	                    [107.1854697, 10.5732241],
+	                    [107.1855944, 10.5732228],
+	                    [107.1908998, 10.5779648],
+	                    [107.1910796, 10.5780821],
+	                    [107.1913397, 10.5781243],
+	                    [107.1918413, 10.5781164],
+	                    [107.1918064, 10.5790656],
+	                    [107.190637, 10.5790339],
+	                    [107.1893978, 10.5790603],
+	                    [107.1879038, 10.5790392],
+	                    [107.1878475, 10.5790867],
+	                    [107.1877992, 10.5793583],
+	                    [107.1878341, 10.5802521],
+	                    [107.1864045, 10.5802521],
+	                    [107.1801831, 10.5802257]
+	                ]
+	            ]
+	        ]
+	    }'
+	);
+FEHLER:  ungÃ¼ltige Eingabesyntax fÃ¼r ganze Zahl: Â»relation/11380488Â« bei Zeichen 139
+ANWEISUNG:  INSERT INTO powerplants(
+	            plantid, plantname, countryid, powersourcetype, geometrytype, 
+	            coordinates)
+	VALUES (
+	    'relation/11380488',
+	    'NhÃ  mÃ¡y Äiá»‡n máº·t trá»i ChÃ¢u Äá»©c',
+	    1,
+	    'solar',
+	    'multipolygon',
+	    '{
+	        "coordinates": [
+	            [
+	                [
+	                    [107.1801522, 10.5843388],
+	                    [107.1801522, 10.5805764],
+	                    [107.1801925, 10.5804735],
+	                    [107.183336, 10.5805289],
+	                    [107.1826842, 10.5821689],
+	                    [107.1818501, 10.5843256],
+	                    [107.1801522, 10.5843388]
+	                ]
+	            ],
+	            [
+	                [
+	                    [107.1801831, 10.5802257],
+	                    [107.1801718, 10.5801541],
+	                    [107.1801757, 10.5797138],
+	                    [107.1801884, 10.579055],
+	                    [107.1802032, 10.5789918],
+	                    [107.1802287, 10.5789193],
+	                    [107.1811031, 10.5779912],
+	                    [107.1854697, 10.5732241],
+	                    [107.1855944, 10.5732228],
+	                    [107.1908998, 10.5779648],
+	                    [107.1910796, 10.5780821],
+	                    [107.1913397, 10.5781243],
+	                    [107.1918413, 10.5781164],
+	                    [107.1918064, 10.5790656],
+	                    [107.190637, 10.5790339],
+	                    [107.1893978, 10.5790603],
+	                    [107.1879038, 10.5790392],
+	                    [107.1878475, 10.5790867],
+	                    [107.1877992, 10.5793583],
+	                    [107.1878341, 10.5802521],
+	                    [107.1864045, 10.5802521],
+	                    [107.1801831, 10.5802257]
+	                ]
+	            ]
+	        ]
+	    }'
+	);
+FEHLER:  ungÃ¼ltige Eingabesyntax fÃ¼r ganze Zahl: Â»relation/11380488Â« bei Zeichen 139
+ANWEISUNG:  INSERT INTO powerplants(
+	            plantid, plantname, countryid, powersourcetype, geometrytype, 
+	            coordinates)
+	VALUES (
+	    'relation/11380488',
+	    'NhÃ  mÃ¡y Äiá»‡n máº·t trá»i ChÃ¢u Äá»©c',
+	    '1',
+	    'solar',
+	    'multipolygon',
+	    '{
+	        "coordinates": [
+	            [
+	                [
+	                    [107.1801522, 10.5843388],
+	                    [107.1801522, 10.5805764],
+	                    [107.1801925, 10.5804735],
+	                    [107.183336, 10.5805289],
+	                    [107.1826842, 10.5821689],
+	                    [107.1818501, 10.5843256],
+	                    [107.1801522, 10.5843388]
+	                ]
+	            ],
+	            [
+	                [
+	                    [107.1801831, 10.5802257],
+	                    [107.1801718, 10.5801541],
+	                    [107.1801757, 10.5797138],
+	                    [107.1801884, 10.579055],
+	                    [107.1802032, 10.5789918],
+	                    [107.1802287, 10.5789193],
+	                    [107.1811031, 10.5779912],
+	                    [107.1854697, 10.5732241],
+	                    [107.1855944, 10.5732228],
+	                    [107.1908998, 10.5779648],
+	                    [107.1910796, 10.5780821],
+	                    [107.1913397, 10.5781243],
+	                    [107.1918413, 10.5781164],
+	                    [107.1918064, 10.5790656],
+	                    [107.190637, 10.5790339],
+	                    [107.1893978, 10.5790603],
+	                    [107.1879038, 10.5790392],
+	                    [107.1878475, 10.5790867],
+	                    [107.1877992, 10.5793583],
+	                    [107.1878341, 10.5802521],
+	                    [107.1864045, 10.5802521],
+	                    [107.1801831, 10.5802257]
+	                ]
+	            ]
+	        ]
+	    }'
+	);
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-03 09:42:01 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-03 16:59:43 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-07 20:28:03 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+FEHLER:  Relation Â»countryÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT * FROM country
+FEHLER:  Relation Â»countryÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT * FROM country
+FEHLER:  Relation Â»countryÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT * FROM country
+FEHLER:  Relation Â»countryÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT * FROM country
+FEHLER:  Syntaxfehler bei Â»)Â« bei Zeichen 224
+ANWEISUNG:  CREATE TABLE damproject (
+	    id SERIAL PRIMARY KEY,
+	    country VARCHAR(255) NOT NULL,
+	    province VARCHAR(255) NOT NULL,
+	    latitude NUMERIC(10, 6) NOT NULL,
+	    longitude NUMERIC(10, 6) NOT NULL,
+	    description TEXT,
+	);
+FEHLER:  Relation Â»damprojectÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT * FROM damproject
+FEHLER:  Relation Â»damprojectÂ« existiert nicht bei Zeichen 15
+ANWEISUNG:  SELECT * FROM damproject
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FATAL:  Passwort-Authentifizierung für Benutzer »your_mysql_username« fehlgeschlagen
+DETAIL:  Verbindung stimmte mit pg_hba.conf-Zeile 82 überein: »host    all             all             ::1/128                 password«
+FEHLER:  doppelter SchlÃ¼sselwert verletzt Unique-Constraint Â»damproject_pkeyÂ«
+DETAIL:  SchlÃ¼ssel Â»(id)=(1)Â« existiert bereits.
+ANWEISUNG:  INSERT INTO damproject (country, province, description, latitude, longitude) 
+	              VALUES ('Country1', 'gÃ ', 'gsg', 19.119522323341243, 105.2462288589094)
+LOG:  Serverprozess (PID 14820) wurde durch Ausnahme 0x40010004 beendet
+DETAIL:  Der fehlgeschlagene Prozess führte aus: set client_encoding to 'UNICODE'
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  aktive Serverprozesse werden abgebrochen
+WARNUNG:  breche Verbindung ab wegen Absturz eines anderen Serverprozesses
+DETAIL:  Der Postmaster hat diesen Serverprozess angewiesen, die aktuelle Transaktion zurückzurollen und die Sitzung zu beenden, weil ein anderer Serverprozess abnormal beendet wurde und möglicherweise das Shared Memory verfälscht hat.
+TIPP:  In einem Moment sollten Sie wieder mit der Datenbank verbinden und Ihren Befehl wiederholen können.
+LOG:  alle Serverprozesse beendet; initialisiere neu
+LOG:  Startprozess (PID 8940) wurde durch Ausnahme 0xC000026B beendet
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  Serverstart abgebrochen wegen Startprozessfehler
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-12-08 18:42:17 CET
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Redo beginnt bei 0/25D4790
+LOG:  Datensatz mit Länge Null bei 0/25D4B60
+LOG:  Redo fertig bei 0/25D4B30
+LOG:  letzte vollständige Transaktion war bei Logzeit 2023-12-08 18:54:26.927+01
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-08 23:54:37 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-10 12:25:46 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  Serverprozess (PID 7064) wurde durch Ausnahme 0x40010004 beendet
+DETAIL:  Der fehlgeschlagene Prozess führte aus: SELECT format_type(oid,NULL) as typname FROM pg_type WHERE oid = 25
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  aktive Serverprozesse werden abgebrochen
+WARNUNG:  breche Verbindung ab wegen Absturz eines anderen Serverprozesses
+DETAIL:  Der Postmaster hat diesen Serverprozess angewiesen, die aktuelle Transaktion zurückzurollen und die Sitzung zu beenden, weil ein anderer Serverprozess abnormal beendet wurde und möglicherweise das Shared Memory verfälscht hat.
+TIPP:  In einem Moment sollten Sie wieder mit der Datenbank verbinden und Ihren Befehl wiederholen können.
+LOG:  alle Serverprozesse beendet; initialisiere neu
+LOG:  Startprozess (PID 11572) wurde durch Ausnahme 0xC000026B beendet
+TIPP:  Sehen Sie die Beschreibung des Hexadezimalwerts in der C-Include-Datei »ntstatus.h« nach.
+LOG:  Serverstart abgebrochen wegen Startprozessfehler
+LOG:  Datenbanksystem wurde unterbrochen; letzte bekannte Aktion am 2023-12-12 19:08:02 CET
+LOG:  Datenbanksystem wurde nicht richtig heruntergefahren; automatische Wiederherstellung läuft
+LOG:  Datensatz mit Länge Null bei 0/25D5D28
+LOG:  Redo nicht nötig
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-17 17:10:05 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+FEHLER:  Syntaxfehler bei Â»dateÂ« bei Zeichen 1
+ANWEISUNG:  date timestamp without time zone DEFAULT now()
+FEHLER:  Spalte Â»dateÂ« von Relation Â»markersÂ« existiert bereits
+ANWEISUNG:  ALTER TABLE markers ADD COLUMN date timestamp without time zone;
+	ALTER TABLE markers ALTER COLUMN date SET DEFAULT now();
+	
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  konnte temporäre Statistikdatei »pg_stat_tmp/global.tmp« nicht in »pg_stat_tmp/global.stat« umbenennen: Permission denied
+LOG:  verwende veraltete Statistiken anstatt aktueller, weil der Statistiksammelprozess nicht antwortet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-19 00:40:26 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+FEHLER:  kann Tabelle spatial_ref_sys nicht lÃ¶schen, wird von Erweiterung postgis benÃ¶tigt
+TIPP:  Sie kÃ¶nnen stattdessen Erweiterung postgis lÃ¶schen.
+ANWEISUNG:  DROP TABLE public.spatial_ref_sys
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-19 12:54:07 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2023-12-26 22:32:51 CET heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+LOG:  fahre herunter
+LOG:  Datenbanksystem ist heruntergefahren
+LOG:  Datenbanksystem wurde am 2025-08-14 23:01:07 CEST heruntergefahren
+LOG:  MultiXact-Member-Wraparound-Schutz ist jetzt aktiviert
+LOG:  Datenbanksystem ist bereit, um Verbindungen anzunehmen
+LOG:  Autovacuum-Launcher startet
+LOG:  intelligentes Herunterfahren verlangt
+LOG:  Autovacuum-Launcher fährt herunter
+FATAL:  das Datenbanksystem fährt herunter
+FATAL:  das Datenbanksystem fährt herunter

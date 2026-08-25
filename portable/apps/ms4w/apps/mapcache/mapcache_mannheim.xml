@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapcache>
+	
+   <!--Filebasiert-->
+   <cache name="disk" type="disk" >
+       <base>C:/ms4w/tmp/ms_tmp/cache</base>
+    </cache>
+	
+	<!--Berkeley DB-->
+	<cache name="berkeley" type="bdb">
+      <base>C:/ms4w/tmp/ms_tmp/cache</base>
+   </cache>
+   
+   <!--SQLITE 3 DB-->
+   <cache name="sqlite" type="sqlite3">
+      <dbfile>C:/ms4w/tmp/ms_tmp/cache/sqlitefile.db</dbfile>
+      <pragma name="max_page_count">10000000</pragma>
+   </cache>
+   
+   <!--Gridset -->
+   <!--Hinweis: 
+   resolution kann über Funktion getreselutions() in Firebug Konsole im NETGIS Map Client ermittelt werden
+   extent großzügig angeben, da sonst Fehlerkacheln am Rand
+   -->
+   <grid name="GK3">
+	   <metadata><title>Stadtplan Mannheim</title></metadata>
+	   <extent>3457695,5474929,3470348,5495003</extent> 
+	   <srs>EPSG:31467</srs>
+	   <units>m</units>
+	   <size>256 256</size>
+	   <resolutions>52.916638091682096 35.27775872778806 17.63887936389403 12.347215554725821 8.819439681947015 7.055551745557612 5.291663809168209 4.233331047334568 3.527775872778806 3.1749982855009256 2.8222206982230453 2.469443110945164 2.116665523667284 1.763887936389403 1.4111103491115227 1.058332761833642 0.7055551745557613 0.35277758727788067 0.2645831904584105 0.17638879363894033 0.14111103491115226 0.10583327618336419 0.07055551745557613 0.035277758727788065 0.017638879363894033</resolutions>
+	</grid>
+
+   
+   <!--Source-->
+   <source name="stadtplan_farbe" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>stadtplan_farbe</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+ 
+   <!-- 
+   <source name="stadtplan_farbe" type="mapserver">
+      <http>
+         <url>http://localhost:88/cgi-bin/mapserv.exe?</url>
+      </http>
+      <mapfile>C:/inetpub/db/data_mannheim_intranet/map.map</mapfile>
+    </source>
+    -->
+   
+   <!--Tileset-->
+   <tileset name="stadtplan_farbe">
+      <source>stadtplan_farbe</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+	
+   <!--Source-->
+   <source name="stadtplan_grau" type="wms">   
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>stadtplan_grau</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="stadtplan_grau">
+      <source>stadtplan_grau</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+   
+   <!--Source-->
+   <source name="stadtgrundkarte" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>stadtgrundkarte</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="stadtgrundkarte">
+      <source>stadtgrundkarte</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>   
+   
+      <!--Source-->
+   <source name="luftbilder2011" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>luftbilder2011</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="luftbilder2011">
+      <source>luftbilder2011</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset> 
+
+      <!--Source-->
+   <source name="luftbilder2014" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>luftbilder2014</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="luftbilder2014">
+      <source>luftbilder2014</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+   
+      <!--Source-->
+   <source name="luftbilder1929" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>luftbilder1929</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="luftbilder1929">
+      <source>luftbilder1929</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>
+   
+      <!--Source-->
+   <source name="tk" type="wms">
+      <getmap>
+         <params>
+            <FORMAT>image/jpeg</FORMAT>
+            <LAYERS>tk</LAYERS>
+         </params>
+      </getmap>      
+      <http>
+         <url>http://localhost/mannheim_intranet/mod_mapserver/map.php?</url>
+      </http>
+   </source>
+   
+   <!--Tileset-->
+   <tileset name="tk">
+      <source>tk</source>
+      <cache>disk</cache>
+      <grid>GK3</grid>
+      <format>JPEG</format>
+      <!--
+	  <metatile>5 5</metatile>      
+	  <metabuffer>10</metabuffer>
+      <expires>3600</expires>
+	  -->
+   </tileset>     
+   
+   <!--Standart Format-->
+   <default_format>JPEG</default_format>
+
+   <!--Service Typen-->
+   <service type="wms" enabled="true">
+      <full_wms>assemble</full_wms>
+      <resample_mode>bilinear</resample_mode>
+      <format>JPEG</format>
+      <maxsize>4096</maxsize>
+   </service>   
+   <service type="wmts" enabled="true"/>
+   <service type="tms" enabled="true"/>
+   <!--
+   <service type="kml" enabled="true"/>
+   <service type="gmaps" enabled="true"/>
+   <service type="ve" enabled="true"/>
+   <service type="demo" enabled="true"/>
+   -->
+
+   <!--Error Logging-->
+   <errors>report</errors>
+   <lock_dir>C:/ms4w/tmp/ms_tmp/cache/log</lock_dir>
+
+</mapcache>

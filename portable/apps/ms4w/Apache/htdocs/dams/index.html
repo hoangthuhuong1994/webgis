@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mekong River Dams</title>
+        <link rel="stylesheet" href="/libs/w3.css" />
+        <link rel="stylesheet" href="/libs/leaflet/leaflet.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Header Area -->
+        <div id="header" class="w3-container w3-teal w3-padding" style="position: relative; background-color: #095884 !important;">
+            <div class="w3-half">
+                <h1>Mekong River Dams</h1>
+                <p>Visualization of dams in Cambodia, Laos, Thailand and Vietnam</p>
+            </div>
+            <div class="w3-half" style="position: absolute; bottom: 10px; right: 45px;">
+                <div class="w3-right">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="All">All</option>
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Lao PDR">Laos</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <!-- Add other countries as needed -->
+                    </select>
+                </div>
+                <div class="w3-right w3-margin-right">
+                    <label for="status">Status:</label>
+                    <select name="status" id="status">
+                        <option value="All">All</option>
+                        <option value="Planned">Planned</option>
+                        <option value="Under Construction">Under Construction</option>
+                        <option value="Operational">Operational</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                </div>
+                <div class="w3-right w3-margin-right">
+                    <button id="editingModeBtn" class="btn btn-primary">Add Location <b>OFF</b></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results map -->
+        <div id="map-container"></div>
+
+        <script type="text/javascript" src="/libs/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="/libs/leaflet/leaflet.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
