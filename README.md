@@ -74,29 +74,6 @@ Table name: `damproject`
 
 ---
 
-## 🚀 How to Run
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/your-username/mekong-river-dams.git
-```
-
-2. **Set up Apache Web Server**  
-   Place the project folder in your Apache `htdocs` directory.
-
-3. **Set up the database**  
-   - Install PostgreSQL and enable the PostGIS extension
-   - Open pgAdmin and create a database named `webgis`
-   - Create the table `damproject` with the columns described above
-
-4. **Configure the PHP backend**  
-   Update the database connection settings in the PHP script to match your local PostgreSQL credentials.
-
-5. **Run the application**  
-   Open your browser and navigate to `http://localhost/mekong-river-dams`
-
----
-
 ## 📸 Screenshots
 
 ### Map Overview
