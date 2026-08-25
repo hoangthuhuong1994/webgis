@@ -1,4 +1,3 @@
-# webgis
 # 🌊 Mekong River Dams — Web-GIS Application
 
 An interactive web mapping application visualizing dams along the Mekong River across four Southeast Asian countries: **Cambodia, Laos, Thailand, and Vietnam**.
