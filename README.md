@@ -100,8 +100,8 @@ Table name: `damproject`
 
 <table>
 <tr>
-<td><img src="screenshots/user_input_popup.png" alt="User Input Popup" width="600"/></td>
-<td><img src="screenshots/user_input.png" alt="Information provided by User" width="600"/></td>
+<td><img src="screenshots/user_input_popup.png" alt="User Input Popup" width="800"/></td>
+<td><img src="screenshots/user_input.png" alt="Information provided by User" width="800"/></td>
 </tr>
 <tr>
 <td align="center">User Input Popup</td>
@@ -113,8 +113,8 @@ Table name: `damproject`
 
 <table>
 <tr>
-<td><img src="screenshots/database.png" alt="Database Overview" width="600"/></td>
-<td><img src="screenshots/details_database.png" alt="Detailed Database View" width="600"/></td>
+<td><img src="screenshots/database.png" alt="Database Overview" width="800"/></td>
+<td><img src="screenshots/details_database.png" alt="Detailed Database View" width="900"/></td>
 </tr>
 <tr>
 <td align="center">Database Overview</td>
