@@ -1,7 +1,6 @@
 # 🌊 Mekong River Dams — Web-GIS Application
 
 An interactive web mapping application visualizing dams along the Mekong River across four Southeast Asian countries: **Cambodia, Laos, Thailand, and Vietnam**.
-
 Developed as part of the course *Raster Data Processing and Image Enhancement Techniques* at **Trier University, Faculty VI – Spatial and Environmental Sciences**.
 
 ---
@@ -109,6 +108,12 @@ git clone https://github.com/your-username/mekong-river-dams.git
 ### Information provided by User
 ![User Input](screenshots/user_input.png)
 
+### Database Overview 
+![User Input](screenshots/database.png)
+
+### A detailed view of the database
+![User Input](screenshots/details_database.png)
+
 ---
 
 ## 👩‍💻 Authors
@@ -116,7 +121,6 @@ git clone https://github.com/your-username/mekong-river-dams.git
 - **Thi Thu Huong Hoang** — Trier University 
 
 **Supervisor:** Sebastian Pauli  
-**Submitted:** 19.12.2023
 
 ---
 
